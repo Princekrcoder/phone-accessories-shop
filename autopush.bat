@@ -1,5 +1,4 @@
 @echo off
-setlocal EnableDelayedExpansion
 title Auto Git Pusher - Phone Accessories Shop
 color 0A
 
@@ -11,14 +10,9 @@ echo Terminal close = Script stop
 echo Press CTRL + C to stop
 echo.
 
-cd /d E:\phone-accessories-shop
-if errorlevel 1 (
-    echo Folder not found! Exiting...
-    pause
-    exit
-)
+cd /d E:\phone-accessories-shop || exit
 
-REM ---------- Git initialization ----------
+REM ---------- Git initialization (one-time) ----------
 if not exist ".git" (
     echo Initializing Git repository...
     git init
@@ -34,7 +28,8 @@ if not exist ".git" (
     git commit -m "Initial commit"
     git push -u origin main
 
-    echo Initial setup done. Restart BAT file.
+    echo Initial setup completed.
+    echo Please restart the BAT file.
     pause
     exit
 )
@@ -48,24 +43,21 @@ echo ==========================================
 echo Last check: %date% %time%
 echo.
 
-git pull --rebase origin main >nul 2>&1
-
 git add .
 
-REM ---- Correct change detection ----
-git status --porcelain > temp_git_status.txt
-
-for %%A in (temp.txt) do set size=%%~zA
-if "%size%"=="0" (
+git diff --cached --quiet
+if %errorlevel%==0 (
     echo No changes detected.
 ) else (
-    echo Changes detected. Committing...
+    echo Changes found. Committing...
     git commit -m "Auto commit: %date% %time%"
     echo Pushing to GitHub...
     git push origin main
     echo ✓ Push completed at %time%
 )
 
-del temp.txt
+echo.
+echo Next check in 30 seconds...
+echo Press CTRL + C or close window to stop
 timeout /t 30 /nobreak >nul
 goto loop
