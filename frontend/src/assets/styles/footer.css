@@ -14,7 +14,7 @@
 
 .section-title::after {
     
-      background: url('@image/underline.png') 50% top no-repeat;
+      background: url('..image/underline.png') 50% top no-repeat;
     background-size: 100% 9px;
     border-radius: 999px;
     color: green;
