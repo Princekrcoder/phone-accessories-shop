@@ -69,6 +69,8 @@
 </template>
 
 <script setup>
+import "@/assets/footer.css";
+
 const popularSearches = [
   { name: "Apple iPhone 12 Back Cover", link: "#" },
   { name: "Apple iPhone 13 Back Cover", link: "#" },
