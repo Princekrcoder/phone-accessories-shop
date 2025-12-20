@@ -1,0 +1,140 @@
+.dis {
+    font-size: 13px;
+    color: #ccc;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-top: 8px;
+}
+
+.section-title {
+    position: relative;
+  display: inline-block;
+  
+}
+
+.section-title::after {
+    
+      background: url('../assets/image/underline.png') 50% top no-repeat;
+    background-size: 100% 9px;
+    border-radius: 999px;
+    color: green;
+    content: "";
+    height: 9px;
+    image-rendering: -webkit-optimize-contrast;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    
+  
+
+
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Popular Searches */
+.popular-searches h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.popular-searches a {
+  color: #ccc;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.popular-searches a:hover {
+  color: #fff;
+}
+
+/* Grid */
+.footer-grid {
+  display: flex;
+  justify-content: space-between; /* auto spacing */
+  flex-wrap: wrap;               /* responsive support */
+  
+  margin-top: 40px;
+}
+
+/* har box */
+.footer-grid > div {
+  flex: 1 1 220px;   /* auto width, minimum size */
+}
+
+/* headings */
+.footer-grid h5 {
+  font-size: 15px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #444;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* list reset */
+.footer-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-grid li {
+  margin-bottom: 8px;
+}
+
+.footer-grid a {
+  color: #ccc;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-grid a:hover {
+  color: #fff;
+}
+
+
+/* Social Icons */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 8px;
+  border: 1px solid #555;
+  padding: 6px 8px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* Bottom */
+.footer-bottom {
+  border-top: 1px solid #222;
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
