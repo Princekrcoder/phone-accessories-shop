@@ -5,8 +5,8 @@ import App from './App.vue'
 import router from './router'
 
 import './assets/styles/main.css'
-import './assets/styles/navbar.css'
-import './assets/styles/footer.css'
+// import './assets/styles/navbar.css'
+import './assets/styles/AppFooter.css'
 
 const app = createApp(App)
 
