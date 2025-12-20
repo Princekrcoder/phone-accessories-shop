@@ -141,7 +141,7 @@ const popularSearches = [
 /* Grid */
 .footer-grid {
   display: flex;
-   /* auto spacing */
+  justify-content: space-between; /* auto spacing */
   flex-wrap: wrap;               /* responsive support */
   
   margin-top: 40px;
