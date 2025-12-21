@@ -78,7 +78,7 @@
       </div>
 
       <div id="logo-row">
-        <img :src="" alt="">
+        <img  :src="logo" alt="logo">
       </div>
 
     </div>
