@@ -78,7 +78,7 @@
       </div>
 
       <div id="logo-row">
-        <img v-for="(logo, index) in logos" :src="logo" alt="logo">
+        <img v-for="(logo, index) in logos" :key="index" :src="logo" alt="logo">
       </div>
 
     </div>
