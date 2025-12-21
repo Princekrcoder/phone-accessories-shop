@@ -1,40 +1,43 @@
-/* GLOBAL RESET */
+/* ===============================
+   GLOBAL RESET
+================================ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ===============================
+   ROOT + BODY
+================================ */
 html, body {
-  margin: 0;
-  padding: 0;
   width: 100%;
-  height: auto;
+  height: 100%;          /* 🔥 auto ❌ */
   font-family: "DM Sans", sans-serif;
   font-size: 87%;
   line-height: 1.6;
 }
 
-/* SPA LAYOUT FIX (IMPORTANT) */
+/* ===============================
+   SPA LAYOUT FIX (MOST IMPORTANT)
+================================ */
 #app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* LINKS */
-body {
-    font-weight: 400;
-    font-style: normal;
-}
-body {
-    font-family: "DM Sans", sans-serif;
-}
-body {
-    font-size: 87%;
-}
-body {
-    line-height: 1.6;
+/* ===============================
+   MAIN CONTENT (footer niche fix)
+================================ */
+main {
+  flex: 1;               /* 🔥 ye hi white gap fix karega */
 }
 
-
+/* ===============================
+   BODY TEXT
+================================ */
+body {
+  font-weight: 400;
+  font-style: normal;
+}
