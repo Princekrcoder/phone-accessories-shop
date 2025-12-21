@@ -15,9 +15,6 @@ const closeMenu = () => {
 </script>
 
 <template>
-<div>
-    <!-- HEADER -->
-  <template>
   <div class="header-wrapper">
     <!-- TOP ANNOUNCEMENT BAR -->
     <div class="top-bar">
@@ -59,8 +56,6 @@ const closeMenu = () => {
   </div>
 </template>
 
-</div>
-</template>
 
 <style>
 @import "@/assets/styles/Header.css";
