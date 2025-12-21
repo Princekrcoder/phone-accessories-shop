@@ -1,18 +1,13 @@
 /* ---------- Common ---------- */
 .is-divider {
-    background-color: hsl(0 0% 100% / .3);
+  display: block;
+  width: 100%;
+  max-width: 30px;     /* chhoti underline */
+  height: 3px;
+  margin: 10px 0 14px;
+  background-color: rgba(255, 255, 255, 0.3); /* footer ke liye */
 }
-.is-divider {
-    margin-top: .66em;
-}
-.is-divider {
-    background-color: rgb(0 0 0 / .1);
-    display: block;
-    height: 3px;
-    margin: 1em 0;
-    max-width: 30px;
-    width: 100%;
-}
+
 
 /* ---------- Section Title ---------- */
 .section-title {
