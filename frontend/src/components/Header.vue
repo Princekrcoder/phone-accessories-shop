@@ -50,4 +50,6 @@ const closeMenu = () => {
 </div>
 </template>
 
-<style></style>
+<style>
+@import "@/assets/styles/Header.css";
+</style>
