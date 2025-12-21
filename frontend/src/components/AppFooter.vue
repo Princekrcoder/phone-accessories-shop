@@ -76,3 +76,22 @@
     </div>
   </footer>
 </template>
+
+
+<script setup>
+
+
+const popularSearches = [
+  { name: "Apple iPhone 12 Back Cover", link: "#" },
+  { name: "Apple iPhone 13 Back Cover", link: "#" },
+  { name: "Apple iPhone 14 Back Cover", link: "#" },
+  { name: "Apple iPhone 15 Back Cover", link: "#" },
+  { name: "OnePlus 11 (5G) Back Cover", link: "#" },
+  { name: "Samsung Galaxy S23 Back Cover", link: "#" }
+];
+</script>
+
+<style>
+@import "@/assets/styles/footer.css";
+
+</style>
