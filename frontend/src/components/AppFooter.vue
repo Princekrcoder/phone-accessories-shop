@@ -27,7 +27,7 @@
           <h5>Company</h5>
           <div class="is-divider small"> </div>
           <ul>
-            <li><a href="#">About Us</a></li>
+            <li class=""><a href="#">About Us</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms & Conditions</a></li>
             <li><a href="#">Payments & Returns</a></li>
