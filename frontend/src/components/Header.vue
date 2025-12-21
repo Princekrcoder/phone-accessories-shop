@@ -54,8 +54,8 @@ OnlineWebFonts_Com({
           <span class="search-icon">🔍</span>
         </div>
 
-        <button class="cart-btn">
-          <div class="div"></div>
+        <button class="div">
+          🛒 Cart (0)
         </button>
       </div>
     </header>
