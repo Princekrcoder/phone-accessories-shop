@@ -25,6 +25,7 @@
       <div class="footer-grid">
         <div>
           <h5>Company</h5>
+          <div class="is-divider small"></div>
           <ul>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Privacy Policy</a></li>
@@ -36,6 +37,7 @@
 
         <div>
           <h5>Contact Us</h5>
+          <div class="is-divider small"></div>
           <p><strong>Email:</strong> help@zapvi.in</p>
           <p>Guaranteed Response Time<br />Within 24–48 Hours</p>
           <p><strong>Working Days:</strong><br />Mon – Sat / 9:30AM – 6:30PM</p>
@@ -43,6 +45,7 @@
 
         <div>
           <h5>Customer Service</h5>
+          <div class="is-divider small"></div>
           <ul>
             <li><a href="#">Track Your Order</a></li>
             <li><a href="#">Download Invoice</a></li>
