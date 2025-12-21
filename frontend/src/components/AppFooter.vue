@@ -78,7 +78,7 @@
       </div>
 
       <div id="logo-row">
-        <img  :src="logo" alt="logo">
+        <img v-for="(logo)" :src="logo" alt="logo">
       </div>
 
     </div>
