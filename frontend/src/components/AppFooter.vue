@@ -89,8 +89,8 @@
 <script setup>
 import logo1 from "@/assets/logos/1.png";
 import logo2 from "@/assets/logos/2.png";
-import logo3 from "@/assets/images/logos/3.png";
-import logo4 from "@/assets/images/logos/4.png";
+import logo3 from "@/assets/logos/3.png";
+import logo4 from "@/assets/logos/4.png";
 
 const logos = [logo1, logo2, logo3, logo4];
 
