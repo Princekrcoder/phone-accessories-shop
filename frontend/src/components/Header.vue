@@ -49,7 +49,7 @@ const closeMenu = () => {
         </div>
 
         <button class="cart-btn">
-          ₹0.00 🛍
+          ₹0.00 🛍 
         </button>
       </div>
     </header>
