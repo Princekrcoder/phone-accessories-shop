@@ -87,7 +87,7 @@
 
 
 <script setup>
-import
+import 
 
 const popularSearches = [
   { name: "Apple iPhone 12 Back Cover", link: "#" },
