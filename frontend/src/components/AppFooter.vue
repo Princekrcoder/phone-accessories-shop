@@ -25,7 +25,7 @@
       <div class="footer-grid">
         <div>
           <h5>Company</h5>
-          <div class="is-divider small"> </div>
+          <div class="is-divider"> </div>
           <ul>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Privacy Policy</a></li>
