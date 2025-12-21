@@ -89,15 +89,13 @@
 
 .footer-grid li {
   margin-bottom: 8px;
-  .footer-list li {
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-}
-
-.footer-grid li a{
   
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+
+
 }
+
+
 
 .footer-grid a {
   color: #ccc;
