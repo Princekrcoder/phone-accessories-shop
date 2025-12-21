@@ -78,9 +78,8 @@
         </div>
         <!-- logo is currently disabled
        <div id="logo-row">
-        <img v-for="(logo, index) in logos" :key="index" :src="logo" alt="logo">
-      </div> -->
-
+          <img v-for="(logo, index) in logos" :key="index" :src="logo" alt="logo">
+       </div> -->
     </div>
 </footer>
 </template>
