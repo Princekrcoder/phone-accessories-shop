@@ -87,8 +87,9 @@
   margin: 0;
 }
 
-.footer-grid li {
+.footer-grid li a{
   margin-bottom: 8px;
+  
 }
 
 .footer-grid a {
