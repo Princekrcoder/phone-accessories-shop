@@ -55,7 +55,7 @@ OnlineWebFonts_Com({
         </div>
 
         <button class="cart-btn">
-          ₹0.00 🛍 
+          <div class="div"></div>
         </button>
       </div>
     </header>
