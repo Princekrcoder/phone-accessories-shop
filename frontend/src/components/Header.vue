@@ -12,6 +12,12 @@ const closeMenu = () => {
   isMenuOpen.value = false;
   document.body.style.overflow = "";
 };
+
+OnlineWebFonts_Com({
+    'Id':'.div',
+    'Data':__Animations['2599'],
+}).Play();
+
 </script>
 
 <template>
@@ -49,7 +55,7 @@ const closeMenu = () => {
         </div>
 
         <button class="cart-btn">
-          ₹0.00 🛍 
+          <div class="div"></div> 
         </button>
       </div>
     </header>
