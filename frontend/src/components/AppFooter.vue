@@ -92,7 +92,7 @@ import logo2 from "@/assets/images/logos/2.png";
 import logo3 from "@/assets/images/logos/3.png";
 import logo4 from "@/assets/images/logos/4.png";
 
-const logos = []
+const logos = [logo1, logo2, logo3, logo4];
 
 const popularSearches = [
   { name: "Apple iPhone 12 Back Cover", link: "#" },
