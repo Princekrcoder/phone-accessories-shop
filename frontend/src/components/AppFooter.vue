@@ -77,7 +77,9 @@
         <p>Copyright © 2025 <strong>Zapvi.in</strong> • Made with ❤️ in India</p> 
       </div>
 
-      
+      <div id="logo-row">
+        
+      </div>
 
     </div>
   </footer>
