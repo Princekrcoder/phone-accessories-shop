@@ -78,7 +78,7 @@
       </div>
 
       <div id="logo-row">
-        
+
       </div>
 
     </div>
@@ -87,7 +87,7 @@
 
 
 <script setup>
-
+import
 
 const popularSearches = [
   { name: "Apple iPhone 12 Back Cover", link: "#" },
