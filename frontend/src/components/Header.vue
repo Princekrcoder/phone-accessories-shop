@@ -1,5 +1,17 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
+
+const cartIcon = ref(null);
+
+onMounted(() => {
+  if (window.OnlineWebFonts_Com && window.__Animations) {
+    window.OnlineWebFonts_Com({
+      Id: cartIcon.value,
+      Data: window.__Animations["2599"],
+    }).Play();
+  }
+});
+
 
 const isMenuOpen = ref(false);
 
