@@ -76,10 +76,10 @@
       <div class="footer-bottom">
         <p >Copyright © 2025 <strong>Zapvi.in</strong> • Made with ❤️ in India</p> 
       </div>
-
-      <div id="logo-row">
+<!-- logo is currently disabled
+      <!-- <div id="logo-row">
         <img v-for="(logo, index) in logos" :key="index" :src="logo" alt="logo">
-      </div>
+      </div> --> -->
 
     </div>
   </footer>
