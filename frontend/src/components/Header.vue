@@ -15,7 +15,8 @@ const closeMenu = () => {
 </script>
 
 <template>
-  <!-- HEADER -->
+<div>
+    <!-- HEADER -->
   <header class="header">
     <button class="menu-btn" @click="openMenu">☰</button>
 
@@ -46,4 +47,5 @@ const closeMenu = () => {
       <li>TRACK YOUR ORDER</li>
     </ul>
   </aside>
+</div>
 </template>
