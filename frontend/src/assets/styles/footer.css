@@ -29,7 +29,7 @@
   background: #000;
   color: #fff;
   font-family: Arial, sans-serif;
-  padding: 40px 0 0;   /* 🔥 bottom padding hata diya */
+  padding: 40px 0 0; /* 🔥 bottom padding hata diya */
   margin: 0;
 }
 
@@ -77,7 +77,6 @@
 .footer-grid h5 {
   font-size: 15px;
   display: inline-block;
-  margin-bottom: 12px;
 }
 
 /* ---------- Lists ---------- */
@@ -89,7 +88,7 @@
 
 .footer-grid li {
   padding: 10px 0; /* 🔥 spacing yahin se control */
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-grid li:last-child {
@@ -130,7 +129,7 @@
 .footer-bottom {
   border-top: 1px solid #222;
   margin-top: 30px;
-  padding: 15px 0;   /* 🔥 equal padding */
+  padding: 15px 0; /* 🔥 equal padding */
   text-align: center;
   font-size: 13px;
   color: #aaa;
