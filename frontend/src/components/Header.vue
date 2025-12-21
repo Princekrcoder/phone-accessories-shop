@@ -13,10 +13,10 @@ const closeMenu = () => {
   document.body.style.overflow = "";
 };
 
-// OnlineWebFonts_Com({
-//     'Id':'.div',
-//     'Data':__Animations['2599'],
-// }).Play();
+OnlineWebFonts_Com({
+    'Id':'.div',
+    'Data':__Animations['2599'],
+}).Play();
 
 </script>
 
@@ -54,8 +54,8 @@ const closeMenu = () => {
           <span class="search-icon">🔍</span>
         </div>
 
-        <button class="div">
-          🛒 Cart (0)
+        <button class="cart-btn">
+          <div class="div"></div>
         </button>
       </div>
     </header>
