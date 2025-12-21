@@ -67,8 +67,8 @@ OnlineWebFonts_Com({
         </div>
 
         <button class="cart-btn">
-          <div class="div"></div>
-        </button>
+    <div ref="cartIcon" class="cart-icon"></div>
+  </button>
       </div>
     </header>
   </div>
