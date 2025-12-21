@@ -17,36 +17,48 @@ const closeMenu = () => {
 <template>
 <div>
     <!-- HEADER -->
-  <header class="header">
-    <button class="menu-btn" @click="openMenu">☰</button>
+  <template>
+  <div class="header-wrapper">
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="top-bar">
+      <p>Hurry! Add More to Unlock Free Delivery — Ends Today!</p>
+      <div class="top-links">
+        <a href="#">Contact Us</a>
+        <span>|</span>
+        <a href="#">FAQs</a>
+      </div>
+    </div>
 
-    <div class="logo">Zapvi</div>
+    <!-- MAIN HEADER -->
+    <header class="main-header">
+      <!-- LOGO -->
+      <div class="logo">
+        Zapvi
+        <span class="bolt">⚡</span>
+      </div>
 
-    <button class="cart-btn">🛒</button>
-  </header>
+      <!-- NAV -->
+      <nav class="nav-links">
+        <a href="#">MOBILE COVER</a>
+        <a href="#">MORE</a>
+        <a href="#">OFFER <span class="badge">NEW</span></a>
+      </nav>
 
-  <!-- OVERLAY -->
-  <div
-    class="overlay"
-    v-if="isMenuOpen"
-    @click="closeMenu"
-  ></div>
+      <!-- SEARCH + CART -->
+      <div class="header-actions">
+        <div class="search-box">
+          <input type="text" placeholder="Search..." />
+          <span class="search-icon">🔍</span>
+        </div>
 
-  <!-- SIDE MENU -->
-  <aside :class="['side-menu', { open: isMenuOpen }]">
-    <button class="close-btn" @click="closeMenu">✕</button>
+        <button class="cart-btn">
+          ₹0.00 🛍
+        </button>
+      </div>
+    </header>
+  </div>
+</template>
 
-    <ul>
-      <li>MOBILE COVER</li>
-      <li>OFFER</li>
-      <li>SNAP CASE</li>
-      <li>CLEARPRINT CASE <span class="badge">NEW</span></li>
-      <li>POWERBANK</li>
-      <li>ACRYLIC WALL ART</li>
-      <li>PLAIN T-SHIRTS</li>
-      <li>TRACK YOUR ORDER</li>
-    </ul>
-  </aside>
 </div>
 </template>
 
