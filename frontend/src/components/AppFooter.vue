@@ -121,6 +121,6 @@ const popularSearches = [{
 ];
 </script>
 
-<style >
+<style>
 @import "@/assets/styles/footer.css";
 </style>
