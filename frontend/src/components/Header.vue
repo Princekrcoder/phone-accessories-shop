@@ -13,10 +13,10 @@ const closeMenu = () => {
   document.body.style.overflow = "";
 };
 
-OnlineWebFonts_Com({
-    'Id':'.div',
-    'Data':__Animations['2599'],
-}).Play();
+// OnlineWebFonts_Com({
+//     'Id':'.div',
+//     'Data':__Animations['2599'],
+// }).Play();
 
 </script>
 
