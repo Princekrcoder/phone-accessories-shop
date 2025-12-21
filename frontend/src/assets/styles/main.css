@@ -11,7 +11,16 @@ html, body {
   margin: 0;
   padding: 0;
 
-  font-weight: 400;
+  
+}
+
+/* REMOVE DEFAULT HEADING MARGIN */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+/* LINKS */
+font-weight: 400;
     font-style: normal;
 }
 body {
@@ -22,9 +31,3 @@ body {
 }
 body {
     line-height: 1.6;
-}
-
-/* REMOVE DEFAULT HEADING MARGIN */
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-}
