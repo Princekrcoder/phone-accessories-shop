@@ -87,7 +87,10 @@
 
 
 <script setup>
-import logo1 
+import logo1 from "@/assets/images/logos/1.png";
+import logo2 from "@/assets/images/logos/2.png";
+import logo3 from "@/assets/images/logos/3.png";
+import logo4 from "@/assets/images/logos/4.png";
 
 const popularSearches = [
   { name: "Apple iPhone 12 Back Cover", link: "#" },
