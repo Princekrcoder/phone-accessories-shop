@@ -1,13 +1,11 @@
 /* ---------- Common ---------- */
 .is-divider {
   display: block;
-  width: 100%;
-  max-width: 30px;     /* chhoti underline */
+  width: 30px;
   height: 3px;
   margin: 10px 0 14px;
-  background-color: rgba(255, 255, 255, 0.3); /* footer ke liye */
+  background-color: rgba(255, 255, 255, 0.3);
 }
-
 
 /* ---------- Section Title ---------- */
 .section-title {
@@ -31,7 +29,7 @@
   background: #000;
   color: #fff;
   font-family: Arial, sans-serif;
-  padding: 40px 0 20px; /* ❌ no auto, no max-width */
+  padding: 40px 0 0;   /* 🔥 bottom padding hata diya */
   margin: 0;
 }
 
@@ -39,10 +37,14 @@
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px; /* mobile gap */
+  padding: 0 20px;
 }
 
 /* ---------- Popular Searches ---------- */
+.popular-searches {
+  margin-bottom: 40px;
+}
+
 .popular-searches h4 {
   font-size: 14px;
   margin-bottom: 10px;
@@ -64,9 +66,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
-  margin-top: 40px;
 }
 
+/* columns */
 .footer-grid > div {
   flex: 1 1 220px;
 }
@@ -74,10 +76,8 @@
 /* ---------- Headings ---------- */
 .footer-grid h5 {
   font-size: 15px;
-  
-  
   display: inline-block;
-  padding-bottom: 5px;
+  margin-bottom: 12px;
 }
 
 /* ---------- Lists ---------- */
@@ -88,28 +88,28 @@
 }
 
 .footer-grid li {
-  margin-bottom: 8px;
-  
+  padding: 10px 0; /* 🔥 spacing yahin se control */
   border-bottom: 1px solid rgba(255,255,255,0.1);
-
-
 }
 
+.footer-grid li:last-child {
+  border-bottom: none;
+}
 
-
-.footer-grid a {
+.footer-grid li a {
   color: #ccc;
   font-size: 14px;
   text-decoration: none;
+  display: block;
 }
 
-.footer-grid a:hover {
+.footer-grid li a:hover {
   color: #fff;
 }
 
 /* ---------- Social Icons ---------- */
 .social-icons {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .social-icons a {
@@ -130,7 +130,7 @@
 .footer-bottom {
   border-top: 1px solid #222;
   margin-top: 30px;
-  padding-top: 15px;
+  padding: 15px 0;   /* 🔥 equal padding */
   text-align: center;
   font-size: 13px;
   color: #aaa;
