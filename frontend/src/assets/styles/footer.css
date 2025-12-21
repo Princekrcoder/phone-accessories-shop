@@ -1,34 +1,28 @@
 .dis {
-    font-size: 13px;
-    color: #ccc;
-    line-height: 1.6;
-    max-width: 800px;
-    margin-top: 8px;
+  font-size: 13px;
+  color: #ccc;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-top: 8px;
 }
 
 .section-title {
-    position: relative;
+  position: relative;
   display: inline-block;
-  
 }
 
 .section-title::after {
-    
-      background: url('/image/underline.png') 50% top no-repeat;
-    background-size: 100% 9px;
-    border-radius: 999px;
-    color: green;
-    content: "";
-    height: 9px;
-    image-rendering: -webkit-optimize-contrast;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    
-  
-
-
+  background: url('/image/underline.png') 50% top no-repeat;
+  background-size: 100% 9px;
+  border-radius: 999px;
+  color: green;
+  content: '';
+  height: 9px;
+  image-rendering: -webkit-optimize-contrast;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
 }
 
 .footer {
@@ -38,7 +32,7 @@
   font-family: Arial, sans-serif;
   margin: 0;
 
-    padding: 40px 0;
+  padding: 40px 0;
   display: flow-root;
 }
 
@@ -62,14 +56,14 @@
 .footer-grid {
   display: flex;
   justify-content: space-between; /* auto spacing */
-  flex-wrap: wrap;               /* responsive support */
-  
+  flex-wrap: wrap; /* responsive support */
+
   margin-top: 40px;
 }
 
 /* har box */
 .footer-grid > div {
-  flex: 1 1 220px;   /* auto width, minimum size */
+  flex: 1 1 220px; /* auto width, minimum size */
 }
 
 /* headings */
@@ -101,7 +95,6 @@
 .footer-grid a:hover {
   color: #fff;
 }
-
 
 /* Social Icons */
 .social-icons {
