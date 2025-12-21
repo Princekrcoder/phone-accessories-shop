@@ -15,38 +15,35 @@ const closeMenu = () => {
 </script>
 
 <template>
-  <div class="layout-wrapper">
-    <!-- HEADER -->
-    <header class="header">
-      <button class="menu-btn" @click="openMenu">☰</button>
-      <div class="logo">Zapvi</div>
-      <button class="cart-btn">🛒</button>
-    </header>
+  <!-- HEADER -->
+  <header class="header">
+    <button class="menu-btn" @click="openMenu">☰</button>
 
-    <!-- OVERLAY -->
-    <div
-      class="overlay"
-      v-if="isMenuOpen"
-      @click="closeMenu"
-    ></div>
+    <div class="logo">Zapvi</div>
 
-    <!-- SIDE MENU -->
-    <aside :class="['side-menu', { open: isMenuOpen }]">
-      <button class="close-btn" @click="closeMenu">✕</button>
+    <button class="cart-btn">🛒</button>
+  </header>
 
-      <ul>
-        <li>MOBILE COVER</li>
-        <li>OFFER</li>
-        <li>SNAP CASE</li>
-        <li>CLEARPRINT CASE <span class="badge">NEW</span></li>
-        <li>POWERBANK</li>
-        <li>TRACK YOUR ORDER</li>
-      </ul>
-    </aside>
-  </div>
+  <!-- OVERLAY -->
+  <div
+    class="overlay"
+    v-if="isMenuOpen"
+    @click="closeMenu"
+  ></div>
+
+  <!-- SIDE MENU -->
+  <aside :class="['side-menu', { open: isMenuOpen }]">
+    <button class="close-btn" @click="closeMenu">✕</button>
+
+    <ul>
+      <li>MOBILE COVER</li>
+      <li>OFFER</li>
+      <li>SNAP CASE</li>
+      <li>CLEARPRINT CASE <span class="badge">NEW</span></li>
+      <li>POWERBANK</li>
+      <li>ACRYLIC WALL ART</li>
+      <li>PLAIN T-SHIRTS</li>
+      <li>TRACK YOUR ORDER</li>
+    </ul>
+  </aside>
 </template>
-
-<style scoped>
-    @import url("../assets/styles/header.css");
-</style>
-
