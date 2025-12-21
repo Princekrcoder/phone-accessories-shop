@@ -150,9 +150,9 @@
 }
 
 .logo {
-  
+ height: 20px;
+    vertical-align: middle;
+    width: auto !important;
 }
 
-/* height: 20px;
-    vertical-align: middle;
-    width: auto !important; */
+/*  */
