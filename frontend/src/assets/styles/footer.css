@@ -74,7 +74,7 @@
 /* ---------- Headings ---------- */
 .footer-grid h5 {
   font-size: 15px;
-  
+  margin-bottom: 12px;
   
   display: inline-block;
   padding-bottom: 5px;
@@ -87,9 +87,8 @@
   margin: 0;
 }
 
-.footer-grid li a{
+.footer-grid li {
   margin-bottom: 8px;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
 .footer-grid a {
