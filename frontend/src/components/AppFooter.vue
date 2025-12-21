@@ -51,6 +51,7 @@
 
         <div>
           <h5>Registered Warehouse Address</h5>
+          <div class="is-divider"></div>
           <p>
             23–24 4th Floor Girivar Industrial Park,<br />
             Saniya Hemad Village, Near Saroli,<br />
