@@ -46,3 +46,7 @@ const closeMenu = () => {
   </div>
 </template>
 
+<style scoped>
+    @import url("../assets/styles/header.css");
+</style>
+

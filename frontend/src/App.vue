@@ -1,4 +1,5 @@
 <script setup>
+  im
   import AppFooter from "./components/AppFooter.vue";
   import Home from "./views/Home.vue";
   import Navbar from "./components/Navbar.vue";
@@ -6,6 +7,7 @@
 
 <template>
   <div id="app">
+    <
     <Navbar />
     <Home />
     <AppFooter />
