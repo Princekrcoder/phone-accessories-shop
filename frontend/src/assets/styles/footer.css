@@ -35,7 +35,7 @@
   padding: 40px 0;
   display: flow-root;
   max-width: 1200px;
-  padding: 0 auto;
+  padding: auto;
 }
 
 /* Popular Searches */
