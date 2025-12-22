@@ -8,7 +8,6 @@
 <template>
   <div id="app">
     <Header />
-    
     <Home />
     <AppFooter />
     

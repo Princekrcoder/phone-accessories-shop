@@ -1,37 +1,29 @@
-<script>
-import {
-    ref,
-    onMounted
-} from "vue";
+<script setup>
+import { ref, onMounted } from "vue";
 
 const cartIcon = ref(null);
-
-onMounted(() => {
-    if (window.OnlineWebFonts_Com && window.__Animations) {
-        window.OnlineWebFonts_Com({
-            Id: cartIcon.value,
-            Data: window.__Animations["2599"],
-        }).Play();
-    }
-});
-
 const isMenuOpen = ref(false);
 
 const openMenu = () => {
-    isMenuOpen.value = true;
-    document.body.style.overflow = "hidden";
+  isMenuOpen.value = true;
+  document.body.style.overflow = "hidden";
 };
 
 const closeMenu = () => {
-    isMenuOpen.value = false;
-    document.body.style.overflow = "";
+  isMenuOpen.value = false;
+  document.body.style.overflow = "";
 };
 
-OnlineWebFonts_Com({
-    'Id': '.div',
-    'Data': __Animations['2599'],
-}).Play();
+onMounted(() => {
+  if (window.OnlineWebFonts_Com && window.__Animations && cartIcon.value) {
+    window.OnlineWebFonts_Com({
+      Id: cartIcon.value,
+      Data: window.__Animations["2599"],
+    }).Play();
+  }
+});
 </script>
+
 
 <template>
 <div class="header-wrapper">
@@ -67,8 +59,16 @@ OnlineWebFonts_Com({
                 <span class="search-icon">🔍</span>
             </div>
 
-            <button class="cart-btn">
+            <button class="user">
                 <div ref="cartIcon" class="cart-icon"></div>
+            </button>
+
+            <font-awesome-icon icon="user" />
+
+            
+            
+            <button class="cart-btn">
+                <font-awesome-icon icon="fa-solid fa-user" />
             </button>
         </div>
     </header>
