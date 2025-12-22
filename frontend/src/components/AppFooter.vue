@@ -63,7 +63,7 @@
                 </p>
 
                 <div class="social-icons">
-                    <a href="#">Fb</a>
+                    <a href="#"><FontAwesomeIcon :icon="faFacebook" /></a>
                     <a href="#">Ig</a>
                     <a href="#">Tw</a>
                     <a href="#">Ln</a>
