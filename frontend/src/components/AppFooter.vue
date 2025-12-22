@@ -65,7 +65,7 @@
                 <div class="social-icons">
                     <a href="#"><FontAwesomeIcon :icon="faFacebook" /></a>
                     <a href="#"><FontAwesomeIcon :icon="faInstagram" /></a>
-                    <a href="#"><FontAwesomeIcon :icon="faTwitter" /></a>
+                    <a href="#"><font-awesome-icon icon="fa-brands fa-twitter" /></a>
                     <a href="#">Ln</a>
                     <a href="#">Yt</a>
                 </div>
