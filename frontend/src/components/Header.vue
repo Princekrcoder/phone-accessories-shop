@@ -48,8 +48,8 @@ onMounted(() => {
         
         <!-- NAV -->
         <nav class="nav-links">
-            <a href="#">MOBILE COVER</a>
-            <a href="#">MORE</a>
+            <a href="#"><b>MOBILE COVER</b></a>
+            <a href="#"><b>M</b></a>
             <a href="#">OFFER <span class="badge">NEW</span></a>
         </nav>
 
