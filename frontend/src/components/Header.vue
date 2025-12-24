@@ -45,12 +45,16 @@ onMounted(() => {
             <span class="bolt">⚡</span>
         </div>
 
-        <!-- NAV -->
+        <div>
+          <!-- NAV -->
         <nav class="nav-links">
             <a href="#">MOBILE COVER</a>
             <a href="#">MORE</a>
             <a href="#">OFFER <span class="badge">NEW</span></a>
         </nav>
+        
+        </div>
+        
 
         <!-- SEARCH + CART -->
         <div class="header-actions">
