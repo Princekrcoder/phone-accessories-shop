@@ -8,7 +8,7 @@
     <!-- TOP ANNOUNCEMENT BAR -->
     <div class="top-bar">
         <div class="top-bar-content">
-            <p>Hurry! Add More to Unlock Free Delivery — Ends Today!</p>
+            <b>Hurry! Add More to Unlock Free Delivery — Ends Today!</b>
             <div class="top-links">
                 <a href="#">Contact Us</a>
                 <span>|</span>
