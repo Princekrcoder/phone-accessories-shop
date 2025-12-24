@@ -1,27 +1,5 @@
 <script setup>
-import { ref, onMounted } from "vue";
 
-const cartIcon = ref(null);
-const isMenuOpen = ref(false);
-
-const openMenu = () => {
-  isMenuOpen.value = true;
-  document.body.style.overflow = "hidden";
-};
-
-const closeMenu = () => {
-  isMenuOpen.value = false;
-  document.body.style.overflow = "";
-};
-
-onMounted(() => {
-  if (window.OnlineWebFonts_Com && window.__Animations && cartIcon.value) {
-    window.OnlineWebFonts_Com({
-      Id: cartIcon.value,
-      Data: window.__Animations["2599"],
-    }).Play();
-  }
-});
 </script>
 
 
