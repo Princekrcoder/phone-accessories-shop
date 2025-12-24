@@ -64,7 +64,7 @@
 
                 <div class="social-icons">
                     <a href="#">
-                        <font-awesome-icon icon="fa-brands fa-facebook" /></a>
+                        <i class="bi bi-facebook"></i></a>
                     <a href="#">
                         <font-awesome-icon icon="fa-brands fa-instagram" /></a>
                     <a href="#">
