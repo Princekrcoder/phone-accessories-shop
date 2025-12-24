@@ -27,7 +27,7 @@ onMounted(() => {
 
 <template>
 <div class="header-wrapper">
-    <div>
+    <div class="header-width">
       <!-- TOP ANNOUNCEMENT BAR -->
     <div class="top-bar">
         <p>Hurry! Add More to Unlock Free Delivery — Ends Today!</p>
