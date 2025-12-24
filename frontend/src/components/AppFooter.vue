@@ -71,7 +71,7 @@
                         <i class="bi bi-twitter"></i></a>
                     
                     <a href="#">
-                        <font-awesome-icon icon="fa-brands fa-youtube" /></a>
+                        </a>
                 </div>
 
             </div>
