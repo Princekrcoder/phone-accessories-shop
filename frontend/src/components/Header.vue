@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from 'vue-router';
+
 
 </script>
 
@@ -38,9 +40,9 @@
                 <input type="text" placeholder="Search..." />
                 <span class="search-icon">🔍</span>
             </div>
-            <button class="cart-btn">
+            <router-link class="cart-btn">
                 ₹2300000.00<i class="bi bi-bag-fill" style="padding-left: 3px;"></i>
-            </button>
+            </router-link>
         </div>
 
         <button class="user">
