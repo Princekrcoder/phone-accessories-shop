@@ -1,7 +1,7 @@
 <script setup>
   import Header from "./components/Header.vue";
   import AppFooter from "./components/AppFooter.vue";
-  import Home from "./views/Home.vue";
+  
   
 </script>
 
@@ -9,7 +9,7 @@
   <div id="app">
     <Header />
     <router-view />
-    <Home />
+    
     <AppFooter />
     
   </div>
