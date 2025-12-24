@@ -27,7 +27,7 @@ onMounted(() => {
 
 <template>
 <div class="header-wrapper">
-    <div class="header-width">
+    
       <!-- TOP ANNOUNCEMENT BAR -->
     <div class="top-bar">
         <p>Hurry! Add More to Unlock Free Delivery — Ends Today!</p>
@@ -76,7 +76,7 @@ onMounted(() => {
                 <i class="bi bi-person-circle" style="font-size: 28px;"></i>
         </button>
     </header>
-    </div>
+    
 </div>
 </template>
 
