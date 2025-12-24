@@ -50,7 +50,7 @@ onMounted(() => {
         <nav class="nav-links">
             <a href="#"><b>MOBILE COVER</b></a>
             <a href="#"><b>MORE</b></a>
-            <a href="#"><b>OFFER </b><span class="badge">NEW</span></a>
+            <a href="#"><b>OFFER</b><span class="badge">NEW</span></a>
         </nav>
 
         <!-- SEARCH + CART -->
