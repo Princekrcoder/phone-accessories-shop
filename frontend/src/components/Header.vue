@@ -39,7 +39,7 @@
                 <span class="search-icon">🔍</span>
             </div>
             <button class="cart-btn">
-                ₹23.00<i class="bi bi-bag-fill" style="padding-left: 3px;"></i>
+                ₹2300000.00<i class="bi bi-bag-fill" style="padding-left: 3px;"></i>
             </button>
         </div>
 
