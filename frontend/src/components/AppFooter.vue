@@ -68,9 +68,8 @@
                     <a href="#">
                         <i class="bi bi-instagram"></i></a>
                     <a href="#">
-                        </a>
-                    <a href="#">
-                        <font-awesome-icon icon="fa-brands fa-linkedin" /></a>
+                        <i class="bi bi-twitter"></i></a>
+                    
                     <a href="#">
                         <font-awesome-icon icon="fa-brands fa-youtube" /></a>
                 </div>
