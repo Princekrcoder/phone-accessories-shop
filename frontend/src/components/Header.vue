@@ -1,7 +1,7 @@
-<script setup>
-import { RouterLink } from 'vue-router';
-
-
+<script>
+import {
+    RouterLink
+} from 'vue-router';
 </script>
 
 <template>
@@ -41,9 +41,9 @@ import { RouterLink } from 'vue-router';
                 <span class="search-icon">🔍</span>
             </div>
             <RouterLink to="/cart" class="cart-btn">
-  ₹2300000.00
-  <i class="bi bi-bag-fill" />
-</RouterLink>
+                ₹2300000.00
+                <i class="bi bi-bag-fill" />
+            </RouterLink>
 
         </div>
 
