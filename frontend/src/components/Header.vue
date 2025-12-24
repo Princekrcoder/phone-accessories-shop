@@ -46,11 +46,11 @@ onMounted(() => {
         </div>
 
         <!-- NAV -->
-        <nav class="nav-links">
-            <a href="#">MOBILE COVER</a>
-            <a href="#">MORE</a>
+        <ol class="nav-links">
+            <li href="#">MOBILE COVER</li>
+            <li href="#">MORE</li>
             <a href="#">OFFER <span class="badge">NEW</span></a>
-        </nav>
+        </ol>
 
         <!-- SEARCH + CART -->
         <div class="header-actions">

@@ -63,28 +63,35 @@
                 </p>
 
                 <div class="social-icons">
-                    <a href="#"><FontAwesomeIcon :icon="faFacebook" /></a>
-                    <a href="#"><FontAwesomeIcon :icon="faInstagram" /></a>
-                    <a href="#"><font-awesome-icon icon="fa-brands fa-twitter" /></a>
-                    <a href="#">Ln</a>
-                    <a href="#">Yt</a>
+                    <a href="#">
+                        <font-awesome-icon icon="fa-brands fa-facebook" /></a>
+                    <a href="#">
+                        <font-awesome-icon icon="fa-brands fa-instagram" /></a>
+                    <a href="#">
+                        <font-awesome-icon icon="fa-brands fa-twitter" /></a>
+                    <a href="#">
+                        <font-awesome-icon icon="fa-brands fa-linkedin" /></a>
+                    <a href="#">
+                        <font-awesome-icon icon="fa-brands fa-youtube" /></a>
                 </div>
+
             </div>
         </div>
 
         <!-- BOTTOM BAR -->
         <div class="footer-bottom">
-            <p>Copyright © 2025 <strong>Zapvi.in</strong> • Made with ❤️ in India</p>
+            <p>Copyright © 2025 <strong>Zapvi.in</strong> • Made with ❤️ in India </p>
         </div>
         <!-- logo is currently disabled
        <div id="logo-row">
           <img v-for="(logo, index) in logos" :key="index" :src="logo" alt="logo">
        </div> -->
     </div>
+    <font-awesome-icon icon="fa-brands fa-twitter" />
 </footer>
-</template>
+</template >
 
-<script>
+<script setup>
 // Importing logos is currently disabled
 // import logo1 from "@/assets/logo/logo1.png";
 
