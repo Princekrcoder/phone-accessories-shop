@@ -7,7 +7,8 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      
+      name: 'Cart',
+      component: Cart
     }
   ],
 })
