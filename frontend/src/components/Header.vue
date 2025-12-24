@@ -61,10 +61,10 @@ onMounted(() => {
             </div>
 
             <button class="user">
-                <div ref="cartIcon" class="cart-icon"></div>
+                <i class="bi bi-person-circle"></i>
             </button>
 
-            <font-awesome-icon icon="user" />
+            
 
             
             
