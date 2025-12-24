@@ -47,7 +47,7 @@ onMounted(() => {
             <span class="bolt">⚡</span>
         </div>
 
-        <div class="">
+        <div class="header-menu">
             <!-- NAV -->
             <nav class="nav-links">
                 <a href="#">MOBILE COVER</a>
