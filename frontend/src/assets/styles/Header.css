@@ -124,11 +124,11 @@
 .user {
   display: flex;
   justify-content: flex-end;
-  font-size: 55px;
+  font-size: 18px;
   cursor: pointer;
   border: none;
   background: none;
-  
-  
+  padding: 10px;
+  margin: 10px;
 }
 
