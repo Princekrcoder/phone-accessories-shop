@@ -104,13 +104,9 @@
 .cart-btn {
   padding: 8px 14px;
   border-radius: 20px;
-  border: 1px solid #000;
+  
   background: #fff;
   cursor: pointer;
   font-size: 14px;
 }
 
-.cart-img {
-  height: 16px;
-  margin-right: 6px;
-}
