@@ -1,29 +1,31 @@
-<script setup>
-import { ref, onMounted } from "vue";
+<script>
+import {
+    ref,
+    onMounted
+} from "vue";
 
 const cartIcon = ref(null);
 const isMenuOpen = ref(false);
 
 const openMenu = () => {
-  isMenuOpen.value = true;
-  document.body.style.overflow = "hidden";
+    isMenuOpen.value = true;
+    document.body.style.overflow = "hidden";
 };
 
 const closeMenu = () => {
-  isMenuOpen.value = false;
-  document.body.style.overflow = "";
+    isMenuOpen.value = false;
+    document.body.style.overflow = "";
 };
 
 onMounted(() => {
-  if (window.OnlineWebFonts_Com && window.__Animations && cartIcon.value) {
-    window.OnlineWebFonts_Com({
-      Id: cartIcon.value,
-      Data: window.__Animations["2599"],
-    }).Play();
-  }
+    if (window.OnlineWebFonts_Com && window.__Animations && cartIcon.value) {
+        window.OnlineWebFonts_Com({
+            Id: cartIcon.value,
+            Data: window.__Animations["2599"],
+        }).Play();
+    }
 });
 </script>
-
 
 <template>
 <div class="header-wrapper">
@@ -46,35 +48,31 @@ onMounted(() => {
         </div>
 
         <div>
-          <!-- NAV -->
-        <nav class="nav-links">
-            <a href="#">MOBILE COVER</a>
-            <a href="#">MORE</a>
-            <a href="#">OFFER <span class="badge">NEW</span></a>
-        </nav>
-        
-        </div>
-        
+            <!-- NAV -->
+            <nav class="nav-links">
+                <a href="#">MOBILE COVER</a>
+                <a href="#">MORE</a>
+                <a href="#">OFFER <span class="badge">NEW</span></a>
+            </nav>
+            <!-- SEARCH + CART -->
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." />
+                    <span class="search-icon">🔍</span>
+                </div>
 
-        <!-- SEARCH + CART -->
-        <div class="header-actions">
-            <div class="search-box">
-                <input type="text" placeholder="Search..." />
-                <span class="search-icon">🔍</span>
+                <button class="user">
+                    <div ref="cartIcon" class="cart-icon"></div>
+                </button>
+
+                <font-awesome-icon icon="user" />
+
+                <button class="cart-btn">
+                    <font-awesome-icon icon="fa-solid fa-user" />
+                </button>
             </div>
-
-            <button class="user">
-                <div ref="cartIcon" class="cart-icon"></div>
-            </button>
-
-            <font-awesome-icon icon="user" />
-
-            
-            
-            <button class="cart-btn">
-                <font-awesome-icon icon="fa-solid fa-user" />
-            </button>
         </div>
+
     </header>
 </div>
 </template>
