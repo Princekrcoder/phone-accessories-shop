@@ -72,7 +72,7 @@ onMounted(() => {
         </div>
 
         <button class="user">
-                b
+                <b><i class="bi bi-person-fill"></i></b>
         </button>
     </header>
 </div>
