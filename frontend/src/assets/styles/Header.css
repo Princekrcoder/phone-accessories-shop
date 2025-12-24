@@ -122,7 +122,8 @@
 }
 
 .user {
-  d
+  display: flex;
+  justify-content: flex-end;
   font-size: 18px;
   cursor: pointer;
   border: none;
