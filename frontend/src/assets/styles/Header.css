@@ -18,7 +18,8 @@
 
 .top-bar-content {
   max-width: 1200px;
-  m
+  margin: 0 auto;
+  padding: ;
 }
 
 .top-bar a {
