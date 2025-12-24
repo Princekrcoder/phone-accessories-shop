@@ -11,7 +11,11 @@ const router = createRouter({
       name: 'Cart',
       component: Cart
     },
-    
+    {
+      path: '/',
+      name: 'Home',
+      component: Home
+    }
   ],
 })
 
