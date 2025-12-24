@@ -30,11 +30,13 @@ onMounted(() => {
     
       <!-- TOP ANNOUNCEMENT BAR -->
     <div class="top-bar">
-        <p>Hurry! Add More to Unlock Free Delivery — Ends Today!</p>
+        <div>
+          <p>Hurry! Add More to Unlock Free Delivery — Ends Today!</p>
         <div class="top-links">
             <a href="#">Contact Us</a>
             <span>|</span>
             <a href="#">FAQs</a>
+        </div>
         </div>
     </div>
 
