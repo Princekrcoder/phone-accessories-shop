@@ -38,6 +38,10 @@
   align-items: center;
   border-bottom: 1px solid #e6e6e6;
   font-family: "DM Sans", sans-serif;
+  .top-bar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6px 40px;
   
 }
 
