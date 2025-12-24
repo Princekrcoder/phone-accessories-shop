@@ -69,7 +69,7 @@ onMounted(() => {
             
             
             <button class="cart-btn">
-                <font-awesome-icon icon="fa-solid fa-user" />
+                <img src="" alt="">
             </button>
         </div>
     </header>
