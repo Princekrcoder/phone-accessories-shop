@@ -4,29 +4,30 @@
   font-family: Arial, sans-serif;
 }
 
-/* TOP BAR */
+/* TOP BAR (FULL WIDTH BACKGROUND) */
 .top-bar {
   background: #000;
   color: #fff;
   font-size: 13px;
+}
+
+/* INNER CONTENT (CENTERED & FLEX) */
+.top-bar-content {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 6px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
-.top-bar-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
+/* LINKS */
 .top-bar a {
   color: #fff;
   text-decoration: none;
   margin-left: 10px;
 }
+
 
 /* MAIN HEADER */
 .main-header {
