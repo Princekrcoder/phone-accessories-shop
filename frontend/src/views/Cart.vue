@@ -115,5 +115,5 @@
 
 <!-- CSS import -->
 <style scoped>
-@import "@/assets/css/cart.css";
+@import "@/assets/styles/cart.css";
 </style>
