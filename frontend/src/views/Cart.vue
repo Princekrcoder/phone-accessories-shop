@@ -75,7 +75,7 @@
           <span>₹29.00</span>
         </div>
 
-        <router-link to="/" class="continue-btn">← CONTINUE SHOPPING</router-link>
+        <router-link to="/" class="continue-btn " type="button" class="btn btn-primary btn-sm">← CONTINUE SHOPPING</router-link>
       </div>
 
       <!-- RIGHT: Cart Total -->
