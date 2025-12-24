@@ -39,7 +39,7 @@
                 <span class="search-icon">🔍</span>
             </div>
             <button class="cart-btn">
-                <p style="ba">₹23.00</p><i class="bi bi-bag-fill"></i>
+                <p style="padding-right: 5px;">₹23.00</p><i class="bi bi-bag-fill"></i>
             </button>
         </div>
 
