@@ -40,7 +40,7 @@ import { RouterLink } from 'vue-router';
                 <input type="text" placeholder="Search..." />
                 <span class="search-icon">🔍</span>
             </div>
-            <router-link class="cart-btn">
+            <router-link to="cart-btn">
                 ₹2300000.00<i class="bi bi-bag-fill" style="padding-left: 3px;"></i>
             </router-link>
         </div>
