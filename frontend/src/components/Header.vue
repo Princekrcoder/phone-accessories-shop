@@ -2,19 +2,18 @@
 
 </script>
 
-
 <template>
 <div class="header-wrapper">
-    
-      <!-- TOP ANNOUNCEMENT BAR -->
+
+    <!-- TOP ANNOUNCEMENT BAR -->
     <div class="top-bar">
         <div class="top-bar-content">
-          <p>Hurry! Add More to Unlock Free Delivery — Ends Today!</p>
-        <div class="top-links">
-            <a href="#">Contact Us</a>
-            <span>|</span>
-            <a href="#">FAQs</a>
-        </div>
+            <p>Hurry! Add More to Unlock Free Delivery — Ends Today!</p>
+            <div class="top-links">
+                <a href="#">Contact Us</a>
+                <span>|</span>
+                <a href="#">FAQs</a>
+            </div>
         </div>
     </div>
 
@@ -26,7 +25,6 @@
             <span class="bolt">⚡</span>
         </div>
 
-        
         <!-- NAV -->
         <nav class="nav-links">
             <a href="#"><b>MOBILE COVER</b></a>
@@ -40,23 +38,16 @@
                 <input type="text" placeholder="Search..." />
                 <span class="search-icon">🔍</span>
             </div>
-
-            
-
-            
-
-            
-            
             <button class="cart-btn">
                 <i class="bi bi-bag-fill"></i>
             </button>
         </div>
 
         <button class="user">
-                <i class="bi bi-person-circle" style="font-size: 36px;"></i>
+            <i class="bi bi-person-circle" style="font-size: 36px;"></i>
         </button>
     </header>
-    
+
 </div>
 </template>
 
