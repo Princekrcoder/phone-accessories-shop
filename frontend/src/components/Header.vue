@@ -69,7 +69,7 @@ onMounted(() => {
             
             
             <button class="cart-btn">
-                <img src="@assets/logo/cart.png" alt="">
+                <img src="..assets/logo/cart.png" alt="">
             </button>
         </div>
     </header>
