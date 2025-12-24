@@ -41,10 +41,7 @@
   letter-spacing: -1px;
 }
 
-.header-menu {
- display: flex;
-  justify-content: space-between;
-}
+
 
 .bolt {
   color: #ffc107;
