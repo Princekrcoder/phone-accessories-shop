@@ -47,7 +47,7 @@
 /* NAV */
 .nav-links {
   display: flex;
-  justify-content: ;
+  justify-content: flex-start;
   gap: 26px;
   font-size: 14px;
 }
