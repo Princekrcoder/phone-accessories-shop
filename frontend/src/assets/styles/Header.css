@@ -41,7 +41,10 @@
   letter-spacing: -1px;
 }
 
-.h
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+}
 
 .bolt {
   color: #ffc107;
