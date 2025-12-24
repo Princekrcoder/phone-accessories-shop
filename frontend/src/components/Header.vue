@@ -44,7 +44,7 @@
         </div>
 
         <button class="user">
-            <i class="bi bi-person-circle" style="pa font-size: 36px;"></i>
+            <i class="bi bi-person-circle" style=" font-size: 36px;"></i>
         </button>
     </header>
 
