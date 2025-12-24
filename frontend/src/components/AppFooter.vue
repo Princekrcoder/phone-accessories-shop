@@ -71,7 +71,7 @@
                         <i class="bi bi-twitter"></i></a>
                     
                     <a href="#">
-                        </a>
+                        <i class="bi bi-youtube"></i></a>
                 </div>
 
             </div>
