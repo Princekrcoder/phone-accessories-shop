@@ -60,9 +60,7 @@ onMounted(() => {
                 <span class="search-icon">🔍</span>
             </div>
 
-            <button class="user">
-                <i class="bi bi-person-fill"></i>
-            </button>
+            
 
             
 
@@ -73,7 +71,9 @@ onMounted(() => {
             </button>
         </div>
 
-        <i class="bi bi-person-fill"></i>
+        <button class="user">
+                <i class="bi bi-person-fill"></i>
+        </button>
     </header>
 </div>
 </template>
