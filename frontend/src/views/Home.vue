@@ -51,30 +51,30 @@
     <div class="container my-4">
       <h3 class="mb-3">Latest Products</h3>
 
-      <div class="row g-4">
-        <div
-          class="col-12 col-sm-6 col-md-4 col-lg-3"
-          v-for="n in 8"
-          :key="n"
-        >
-          <div class="card item-card">
-            <span class="badge-discount">-20%</span>
+      <!-- your responsive CSS grid -->
+      <div class="product-grid">
+        <div v-for="n in 8" :key="n" class="product-card">
 
-            <img
-              :src="`https://picsum.photos/400?product-${n}`"
-              class="card-img-top"
-            />
+          <span class="badge-discount">-20%</span>
 
-            <div class="card-body">
-              <h6 class="card-title">Product {{ n }}</h6>
+          <img
+            :src="`https://picsum.photos/400?product-${n}`"
+            class="product-img"
+          />
 
-              <p class="price">
-                ₹999 <span class="old-price">₹1299</span>
-              </p>
+          <h6 class="product-name">
+            Product {{ n }}
+          </h6>
 
-              <button class="btn btn-primary w-100">Add to Cart</button>
-            </div>
-          </div>
+          <p class="price">
+            ₹999
+            <span class="old-price">₹1299</span>
+          </p>
+
+          <button class="add-btn">
+            Add to Cart
+          </button>
+
         </div>
       </div>
     </div>
@@ -91,4 +91,3 @@ import { RouterLink } from "vue-router";
 import "@/assets/styles/home.css";
 import "@/assets/styles/item.css";
 </script>
-

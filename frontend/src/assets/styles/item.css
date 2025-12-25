@@ -1,8 +1,8 @@
-/* grid responsive rules */
+/* ---------- GRID ---------- */
 
 .product-grid {
   display: grid;
-  gap: 18px;
+  gap: 22px;
 }
 
 /* < 550px = 2 columns */
@@ -12,7 +12,7 @@
   }
 }
 
-/* >= 550px = 3 columns */
+/* 550px–849px = 3 columns */
 @media (min-width: 550px) and (max-width: 849px) {
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -22,77 +22,90 @@
 /* >= 850px = 5 columns */
 @media (min-width: 850px) {
   .product-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
-/* product card */
+/* ---------- CARD ---------- */
+
 .product-card {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 10px;
   background: #fff;
+
+  text-align: center;
   position: relative;
-  transition: 0.3s;
+  transition: all 0.25s ease;
 }
 
-.product-card:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  transform: translateY(-5px);
-}
+/* ---------- IMAGE ---------- */
 
-/* product image */
 .product-img {
   width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;
+  height: 205px;
+  object-fit: contain;
+  background: #fff;
 }
 
-/* badge */
+/* ---------- BADGE ---------- */
+
 .badge-discount {
   position: absolute;
   top: 8px;
   left: 8px;
-  background: #ff9800;
-  color: #fff;
-  padding: 4px 7px;
-  border-radius: 6px;
-  font-size: 12px;
-}
-
-/* name */
-.product-name {
-  font-size: 14px;
-  margin-top: 10px;
-  min-height: 36px;
-}
-
-/* price styling */
-.price {
+  background: #ffcc00;
+  color: #000;
   font-weight: 700;
-  margin: 4px 0;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+/* ---------- NAME ---------- */
+
+.product-name {
+  margin: 1.5px 0px;
+  line-height: 1.3;
+  margin-bottom: 0.1em;
+  margin-top: 0.1em;
+  color: #334862;
+  text-align: start;
+}
+
+/* ---------- PRICE ---------- */
+
+.price {
+  margin-top: 6px;
+  font-size: bold;
+  color: #000;
+  text-align: start;
+  font-weight: 600;
 }
 
 .old-price {
   text-decoration: line-through;
-  color: gray;
+  color: #8b8b8b;
   font-size: 12px;
-  margin-left: 4px;
+  margin-right: 6px;
+  font-weight: 400;
 }
 
-/* button */
+/* ---------- BUTTON ---------- */
+
 .add-btn {
-  width: 100%;
+  display: flex;
+  justify-self: start;
+  height: 35px;
   border: none;
   background: #000;
   color: #fff;
-  padding: 7px 0;
-  border-radius: 6px;
+  padding: 9px;
+  border-radius: 3px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 6px;
+  letter-spacing: 0.5px;
 }
 
 .add-btn:hover {
-  opacity: 0.8;
+  opacity: 0.85;
 }
