@@ -5,7 +5,7 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, itaque ipsam? Recusandae possimus, asperiores, laboriosam doloremque voluptate similique, dolorem quasi quidem libero quos placeat illum distinctio iste fugiat. Modi aspernatur consectetur explicabo. Tenetur dignissimos ab nostrum porro totam praesentium ullam aliquid, inventore accusantium distinctio rerum magni rem eius, eos eaque optio saepe nihil officiis. Eveniet iusto, ut odit quis necessitatibus saepe a! Eligendi ea voluptates inventore non expedita qui molestiae illo ullam officia omnis, iure repudiandae neque adipisci vitae voluptas, nobis temporibus ipsum nemo quaerat iusto ducimus voluptate in sed? Beatae perferendis laboriosam earum cupiditate aspernatur autem voluptates quam vitae?</p>
 
     <section class="item-list">
-        <div class="card " style="width: 18rem;">
+        <div class="card item-card" style="width: 18rem;">
             <img src="https://picsum.photos/400?1" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -40,6 +40,8 @@
     margin-top: 30px;
 
 } 
+
+.
 
 img {
     display: inline-block;
