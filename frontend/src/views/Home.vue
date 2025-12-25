@@ -33,6 +33,13 @@
     text-align: center;
 }
 
+.item-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    
+} 
 
 img {
     display: inline-block;
