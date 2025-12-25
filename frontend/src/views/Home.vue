@@ -58,6 +58,6 @@ img {
     overflow: clip;
     aspect-ratio: auto 247 / 329;
     width: 247px;
-    height: 329;
+    height: 329px;
 }
 </style>
