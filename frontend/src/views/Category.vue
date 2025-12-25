@@ -9,7 +9,9 @@
             </h3>
 
             <!-- category-grid -->
-             #category
+             <div id="category-grid">
+                #catego
+             </div>
          </div>
     </div>
 </template>
