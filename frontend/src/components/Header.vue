@@ -39,7 +39,7 @@ import {
             <div class="search-box">
                 <input type="text" placeholder="Search..." />
                 <button class="search-icon">
-                  <b><i class="bi bi-search"></i></b>
+                  <i class="bi bi-search"></i>
                 </button>
             </div>
             <RouterLink to="/cart" class="cart-btn">
