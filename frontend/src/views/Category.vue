@@ -4,6 +4,7 @@
          <div id="top-button">4
             <h3>
                 <b></b>
+                <span>Explore Our Cate</span>
                 <b></b>
             </h3>
          </div>
