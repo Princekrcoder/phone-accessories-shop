@@ -11,7 +11,8 @@
             <!-- category-grid -->
              <div class="category-grid">
                 <div class="category-card"
-                v-f
+                v-for="c in categories"
+                :key="c.id"
                 >
 
                 </div>
