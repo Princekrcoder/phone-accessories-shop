@@ -23,8 +23,7 @@ import {
     <header class="main-header">
         <!-- LOGO -->
         <div class="logo">
-            Zapvi
-            <span class="bolt">⚡</span>
+            Laxman Mobile Shop
         </div>
 
         <!-- NAV -->
