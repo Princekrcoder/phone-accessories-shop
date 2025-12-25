@@ -61,6 +61,19 @@
   letter-spacing: -1px;
 }
 
+.logo {
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background: #e10600;
+  padding: 8px 18px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+
 
 
 .bolt {
