@@ -43,7 +43,7 @@
 
 .item-card {
     border: 1px solid #ffffff;
-    border-radius: none;
+    border-radius: 0px;
     overflow: hidden;
     
 }
