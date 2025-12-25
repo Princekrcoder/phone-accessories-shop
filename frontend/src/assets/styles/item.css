@@ -1,42 +1,46 @@
+/* product cards */
 .item-card {
-  transition: all 0.3s ease;
-  border-radius: 10px;
+  position: relative;
   overflow: hidden;
+  transition: 0.3s;
   height: 100%;
 }
 
-/* hover effect */
 .item-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* image ratio control */
 .item-card img {
   height: 200px;
   object-fit: cover;
 }
 
-/* equal height card body */
-.item-card .card-body {
-  display: flex;
-  flex-direction: column;
+/* price */
+.price {
+  font-weight: 700;
 }
 
-/* title styling */
-.item-card .card-title {
-  font-size: 1rem;
-  font-weight: 600;
-  min-height: 40px;
-}
-
-/* description trimmed */
-.item-card .card-text {
-  flex: 1;
+.old-price {
+  text-decoration: line-through;
+  color: gray;
   font-size: 0.9rem;
 }
 
-/* full width button */
-.item-card .btn {
-  margin-top: 10px;
+/* discount badge */
+.badge-discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: red;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 8px;
+}
+
+/* mobile responsive */
+@media (max-width: 576px) {
+  .item-card img {
+    height: 160px;
+  }
 }
