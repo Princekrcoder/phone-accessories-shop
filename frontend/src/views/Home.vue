@@ -34,4 +34,17 @@
 }
 
 
+
+img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    aspect-ratio: auto 247 / 329;
+}
+
+    
 </style>
