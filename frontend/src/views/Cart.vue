@@ -4,7 +4,7 @@
     <!-- Breadcrumb -->
     <div class="breadcrumb">
       <h2>SHOPPING CART</h2>
-      <h2>›</h2>
+      <h1>›</h1>
       <h2>CHECKOUT DETAILS</h2>
       <h2>›</h2>
       <h2 class="active">ORDER COMPLETE</h2>
