@@ -3,7 +3,7 @@ import {
     RouterLink
 } from 'vue-router';
 
-import
+import "@/assets/image/lax"
 </script>
 
 <template>
