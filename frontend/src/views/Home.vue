@@ -42,7 +42,7 @@
 } 
 
 .item-card {
-    border: 1px solid #ddd;
+    border: 1px solid #ffffff;
     
     overflow: hidden;
     
