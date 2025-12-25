@@ -1,31 +1,35 @@
-/* Banner */
-.banner {
-  height: 300px;
-  background: linear-gradient(#0000009a, #0000009a),
-    url("https://picsum.photos/1200/400") center/cover;
+.page-wrapper {
+  background: #fafafa;
+  min-height: 100vh;
 }
 
-/* category boxes */
-.cat-box {
+/* container */
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* page title */
+.page-title {
   text-align: center;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 10px;
-  transition: 0.3s;
+  margin-top: 20px;
 }
 
-.cat-box img {
-  width: 100%;
-  border-radius: 10px;
+.result-line {
+  text-align: right;
+  font-size: 14px;
+  color: gray;
 }
 
-.cat-box:hover {
-  transform: translateY(-5px);
+/* description section */
+.desc-section {
+  margin-top: 40px;
+  padding: 20px 0;
+  background: #fff;
 }
 
-/* responsive banner */
-@media (max-width: 576px) {
-  .banner {
-    height: 220px;
-  }
+.desc-section h3 {
+  text-align: center;
+  margin-bottom: 10px;
 }
