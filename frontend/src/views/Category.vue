@@ -14,9 +14,13 @@
                 v-for="c in categories"
                 :key="c.id"
                 >
-                
+
                 </div>
              </div>
          </div>
     </div>
 </template>
+
+<script setup>
+cons
+</script>
