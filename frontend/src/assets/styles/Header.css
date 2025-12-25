@@ -1,3 +1,9 @@
+.cart-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
 /* WRAPPER */
 .header-wrapper {
   width: 100%;
