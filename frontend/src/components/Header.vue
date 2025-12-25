@@ -38,7 +38,7 @@ import {
         <div class="header-actions">
             <div class="search-box">
                 <input type="text" placeholder="Search..." />
-                <span class="search-icon"><i class="bi bi-search"></i></span>
+                <butto class="search-icon"><i class="bi bi-search"></i></span>
             </div>
             <RouterLink to="/cart" class="cart-btn">
                 ₹2300000.00
