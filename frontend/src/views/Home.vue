@@ -25,11 +25,11 @@
 
         <!-- Products -->
         <div
-          v-else
-          v-for="n in 20"
-          :key="n"
-          class="product-card"
-        >
+    v-else
+    v-for="n in 20"
+    :key="n"
+    class="product-card"
+  >
           <!-- Discount -->
           <span class="badge-discount">Limited Offer</span>
 
