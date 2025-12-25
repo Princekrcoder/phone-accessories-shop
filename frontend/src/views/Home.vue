@@ -88,6 +88,7 @@
 
 <script setup>
 import { RouterLink } from "vue-router";
-import "@a"
+import "@assets/styles/home.css";
+
 </script>
 
