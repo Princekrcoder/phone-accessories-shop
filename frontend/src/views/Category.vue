@@ -8,7 +8,8 @@
                 <b></b>
             </h3>
 
-            
+            <!-- category-grid -->
+             #category
          </div>
     </div>
 </template>
