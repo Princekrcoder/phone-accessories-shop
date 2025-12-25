@@ -6,8 +6,8 @@
       <h2>SHOPPING CART</h2>
       <h2>›</h2>
       <h2>CHECKOUT DETAILS</h2>
-      <span>›</span>
-      <span class="active">ORDER COMPLETE</span>
+      <h2>›</h2>
+      <h2 class="active">ORDER COMPLETE</h2>
     </div>
 
     <div class="cart-container">
