@@ -118,7 +118,10 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 14px;
-  
+  border: none;
+  background: none;
+  cursor: pointer;
+  fo
 }
 
 /* CART */
