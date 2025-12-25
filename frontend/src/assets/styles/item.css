@@ -126,14 +126,19 @@
   font-weight: 600;
   line-height: 1.25;
 
-  /* REQUIRED PROPERTIES */
+  /* REQUIRED */
   overflow: hidden;
   text-overflow: ellipsis;
 
+  /* Modern standard property */
+  line-clamp: 2;
+
+  /* WebKit fallback (currently widest support) */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
+
 
 
 /* =============================
