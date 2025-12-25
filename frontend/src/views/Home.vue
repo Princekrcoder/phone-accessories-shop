@@ -12,11 +12,11 @@
 
         <!-- Skeleton while loading -->
         <div
-          v-if="loading"
-          v-for="n in 10"
-          :key="'skeleton-' + n"
-          class="product-card skeleton"
-        >
+    v-if="loading"
+    v-for="n in 10"
+    :key="'skeleton-' + n"
+    class="product-card skeleton"
+  >
           <div class="skeleton-img"></div>
           <div class="skeleton-line short"></div>
           <div class="skeleton-line"></div>
