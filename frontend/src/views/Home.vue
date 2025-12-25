@@ -42,8 +42,8 @@
 } 
 
 .item-card {
-    border: 1px solid #ffffff;
-    border-radius: 0px;
+    border: hidden;
+    
     overflow: hidden;
     
 }
