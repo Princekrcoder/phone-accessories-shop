@@ -25,7 +25,7 @@ import "@/assets/image/laxman-logo.png";
     <header class="main-header">
         <!-- LOGO -->
         <div class="logo">
-            <img src="@/" alt="">
+            <img :src="logo" alt="">
         </div>
 
         <!-- NAV -->
