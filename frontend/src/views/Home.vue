@@ -43,9 +43,9 @@
 
 .item-card {
     border: 1px solid #ddd;
-    border-radius: 8px;
+    
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    
 }
 
 img {
