@@ -1,46 +1,98 @@
-/* product cards */
-.item-card {
+/* grid responsive rules */
+
+.product-grid {
+  display: grid;
+  gap: 18px;
+}
+
+/* < 550px = 2 columns */
+@media (max-width: 549px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* >= 550px = 3 columns */
+@media (min-width: 550px) and (max-width: 849px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* >= 850px = 5 columns */
+@media (min-width: 850px) {
+  .product-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* product card */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
   position: relative;
-  overflow: hidden;
   transition: 0.3s;
-  height: 100%;
 }
 
-.item-card:hover {
+.product-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.item-card img {
-  height: 200px;
+/* product image */
+.product-img {
+  width: 100%;
+  height: 160px;
   object-fit: cover;
+  border-radius: 8px;
 }
 
-/* price */
+/* badge */
+.badge-discount {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #ff9800;
+  color: #fff;
+  padding: 4px 7px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* name */
+.product-name {
+  font-size: 14px;
+  margin-top: 10px;
+  min-height: 36px;
+}
+
+/* price styling */
 .price {
   font-weight: 700;
+  margin: 4px 0;
 }
 
 .old-price {
   text-decoration: line-through;
   color: gray;
-  font-size: 0.9rem;
+  font-size: 12px;
+  margin-left: 4px;
 }
 
-/* discount badge */
-.badge-discount {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: red;
-  color: white;
-  padding: 5px 8px;
-  border-radius: 8px;
+/* button */
+.add-btn {
+  width: 100%;
+  border: none;
+  background: #000;
+  color: #fff;
+  padding: 7px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
 }
 
-/* mobile responsive */
-@media (max-width: 576px) {
-  .item-card img {
-    height: 160px;
-  }
+.add-btn:hover {
+  opacity: 0.8;
 }
