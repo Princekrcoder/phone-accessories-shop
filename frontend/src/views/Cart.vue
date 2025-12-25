@@ -3,9 +3,9 @@
 
     <!-- Breadcrumb -->
     <div class="breadcrumb">
-      <span>SHOPPING CART</span>
-      <span>›</span>
-      <span>CHECKOUT DETAILS</span>
+      <h2>SHOPPING CART</h2>
+      <h2>›</h2>
+      <h2>CHECKOUT DETAILS</h2>
       <span>›</span>
       <span class="active">ORDER COMPLETE</span>
     </div>
