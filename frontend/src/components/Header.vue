@@ -23,7 +23,7 @@ import {
     <header class="main-header">
         <!-- LOGO -->
         <div class="logo">
-            Laxman Mobile Shop
+            Laxman Mobiles
         </div>
 
         <!-- NAV -->
