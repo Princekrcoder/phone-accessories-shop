@@ -22,5 +22,12 @@
 </template>
 
 <script setup>
-cons
+const categories = [
+    { id: 1, name: 'Mobile Covers',  },
+    { id: 2, name: 'Screen Protectors' },
+    { id: 3, name: 'Chargers' },
+    { id: 4, name: 'Headphones' },
+    { id: 5, name: 'Power Banks' },
+    { id: 6, name: 'Cables' },
+];
 </script>
