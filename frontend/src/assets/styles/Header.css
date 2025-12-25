@@ -56,10 +56,17 @@
 
 /* LOGO */
 .logo {
-  font-size: 34px;
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 800;
-  letter-spacing: -1px;
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background: #ffffff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  display: inline-block;
 }
+
 
 
 
