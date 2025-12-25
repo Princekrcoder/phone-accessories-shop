@@ -23,7 +23,7 @@
 
 <script setup>
 const categories = [
-    { id: 1, name: 'Mobile Covers',  },
+    { id: 1, name: 'Mobile Covers', Image: URL },
     { id: 2, name: 'Screen Protectors' },
     { id: 3, name: 'Chargers' },
     { id: 4, name: 'Headphones' },
