@@ -1,14 +1,42 @@
-
-
-img {
-    display: inline-block;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    aspect-ratio: auto 247 / 329;
+.item-card {
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
 }
 
-    
+/* hover effect */
+.item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* image ratio control */
+.item-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* equal height card body */
+.item-card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* title styling */
+.item-card .card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  min-height: 40px;
+}
+
+/* description trimmed */
+.item-card .card-text {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+/* full width button */
+.item-card .btn {
+  margin-top: 10px;
+}
