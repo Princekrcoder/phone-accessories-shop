@@ -1,5 +1,5 @@
 <template>
-    <div id="category-page">
+    <div class="category-page">
         <!-- Top Button -->
          <div id="top-button">4
             <h3>
@@ -10,7 +10,9 @@
 
             <!-- category-grid -->
              <div id="category-grid">
-                #catego
+                <div id="category-card">
+
+                </div>
              </div>
          </div>
     </div>
