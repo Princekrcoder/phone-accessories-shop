@@ -7,6 +7,8 @@
                 <span>Explore Our Categories</span>
                 <b></b>
             </h3>
+
+            
          </div>
     </div>
 </template>
