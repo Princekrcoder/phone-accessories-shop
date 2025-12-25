@@ -76,11 +76,13 @@
   </div>
 </template>
 
-<script setup>
-import { ref, onMounted } from "vue";
 
-import "@/assets/css/home.css";
-import "@/assets/css/item.css";
+
+
+<script setup>
+import { RouterLink } from "vue-router";
+import "@/assets/styles/home.css";
+import "@/assets/styles/item.css";
 
 const loading = ref(true);
 
@@ -89,13 +91,5 @@ onMounted(() => {
     loading.value = false;
   }, 1200);
 });
-</script>
-
-
-
-<script setup>
-import { RouterLink } from "vue-router";
-import "@/assets/styles/home.css";
-import "@/assets/styles/item.css";
 </script>
 
