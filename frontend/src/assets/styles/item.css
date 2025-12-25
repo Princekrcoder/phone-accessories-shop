@@ -6,41 +6,33 @@
   display: grid;
   justify-content: center;
   gap: 18px;
-  padding-bottom: 20px;
 }
 
-/* Very small screens (320–360px) = 1 card */
+/* mobile 1 card */
 @media (max-width: 359px) {
   .product-grid {
     grid-template-columns: repeat(1, 172px);
   }
 }
 
-/* < 550px = 2 cards */
+/* 2 cards */
 @media (min-width: 360px) and (max-width: 549px) {
   .product-grid {
     grid-template-columns: repeat(2, 172px);
   }
 }
 
-/* 550–849px = 3 cards */
-@media (min-width: 550px) and (max-width: 849px) {
+/* 3 cards */
+@media (min-width: 550px) and (max-width: 899px) {
   .product-grid {
     grid-template-columns: repeat(3, 172px);
   }
 }
 
-/* 850+ = 5 cards */
-@media (min-width: 850px) {
+/* 5 cards fixed — FORCE */
+@media (min-width: 900px) {
   .product-grid {
     grid-template-columns: repeat(5, 172px);
-  }
-}
-
-/* extra large desktop center alignment */
-@media (min-width: 1400px) {
-  .product-grid {
-    gap: 22px;
   }
 }
 
