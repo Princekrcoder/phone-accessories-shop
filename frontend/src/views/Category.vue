@@ -14,7 +14,7 @@
                 v-for="c in categories"
                 :key="c.id"
                 >
-
+                
                 </div>
              </div>
          </div>
