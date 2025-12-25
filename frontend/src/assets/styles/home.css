@@ -3,33 +3,21 @@
   min-height: 100vh;
 }
 
-/* container */
 .container {
   width: 92%;
   max-width: 1200px;
   margin: auto;
 }
 
-/* page title */
 .page-title {
   text-align: center;
   margin-top: 20px;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .result-line {
   text-align: right;
-  font-size: 14px;
   color: gray;
-}
-
-/* description section */
-.desc-section {
-  margin-top: 40px;
-  padding: 20px 0;
-  background: #fff;
-}
-
-.desc-section h3 {
-  text-align: center;
-  margin-bottom: 10px;
+  font-size: 13px;
 }

@@ -1,98 +1,205 @@
-/* grid responsive rules */
+/* =============================
+   GRID RESPONSIVE BEHAVIOUR
+=============================*/
 
 .product-grid {
   display: grid;
+  justify-content: center;
   gap: 18px;
 }
 
-/* < 550px = 2 columns */
+/* < 550px = 2 cards */
 @media (max-width: 549px) {
   .product-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 172px);
   }
 }
 
-/* >= 550px = 3 columns */
+/* 550–849px = 3 cards */
 @media (min-width: 550px) and (max-width: 849px) {
   .product-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 172px);
   }
 }
 
-/* >= 850px = 5 columns */
+/* 850+ = 5 cards */
 @media (min-width: 850px) {
   .product-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 172px);
   }
 }
 
-/* product card */
+/* =============================
+   PRODUCT CARD FIXED SIZE
+=============================*/
+
 .product-card {
+  width: 172px;
+  height: 368px;
   border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 12px;
   background: #fff;
+  padding: 8px;
   position: relative;
-  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s ease;
 }
 
 .product-card:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  transform: translateY(-5px);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* product image */
+/* =============================
+   IMAGE
+=============================*/
+
 .product-img {
   width: 100%;
-  height: 160px;
+  height: 204px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 9px;
 }
 
-/* badge */
+/* =============================
+   DISCOUNT BADGE
+=============================*/
+
 .badge-discount {
   position: absolute;
   top: 8px;
-  left: 8px;
-  background: #ff9800;
+  right: 8px;
+  background: #ff5722;
   color: #fff;
-  padding: 4px 7px;
+  padding: 3px 7px;
   border-radius: 6px;
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: 600;
 }
 
-/* name */
+/* =============================
+   NAME (2 line truncate)
+=============================*/
+
 .product-name {
-  font-size: 14px;
-  margin-top: 10px;
-  min-height: 36px;
+  font-size: 13px;
+  margin-top: 8px;
+  font-weight: 600;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-/* price styling */
+/* =============================
+   RATING
+=============================*/
+
+.rating {
+  font-size: 12px;
+  color: #ffb400;
+  margin: 3px 0;
+}
+
+/* =============================
+   PRICE
+=============================*/
+
 .price {
   font-weight: 700;
-  margin: 4px 0;
+  font-size: 14px;
+  margin-bottom: 6px;
 }
 
 .old-price {
-  text-decoration: line-through;
   color: gray;
-  font-size: 12px;
+  font-size: 11px;
+  text-decoration: line-through;
   margin-left: 4px;
 }
 
-/* button */
-.add-btn {
+/* =============================
+   BUTTONS
+=============================*/
+
+.add-btn,
+.option-btn {
   width: 100%;
+  padding: 8px 0;
+  border-radius: 7px;
   border: none;
-  background: #000;
-  color: #fff;
-  padding: 7px 0;
-  border-radius: 6px;
   cursor: pointer;
-  font-size: 13px;
+  margin-top: auto;
+  font-size: 12px;
+  font-weight: 600;
 }
 
-.add-btn:hover {
-  opacity: 0.8;
+.add-btn {
+  background: black;
+  color: white;
+}
+
+.option-btn {
+  background: white;
+  border: 1px solid black;
+}
+
+/* =============================
+   SKELETON LOADER
+=============================*/
+
+.skeleton {
+  overflow: hidden;
+  position: relative;
+}
+
+.skeleton-img,
+.skeleton-line,
+.skeleton-btn {
+  background: #e3e3e3;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+.skeleton-img {
+  height: 204px;
+}
+
+.skeleton-line {
+  height: 12px;
+}
+
+.skeleton-line.short {
+  width: 70%;
+}
+
+.skeleton-btn {
+  height: 30px;
+  margin-top: auto;
+}
+
+/* shimmer */
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
