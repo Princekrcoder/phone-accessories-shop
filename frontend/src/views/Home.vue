@@ -90,38 +90,3 @@
 import { RouterLink } from "vue-router";
 </script>
 
-<style scoped>
-.home {
-    padding: 40px;
-    text-align: center;
-}
-
-.item-list {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-
-} 
-
-.item-card {
-    border: hidden;
-    
-    overflow: hidden;
-    
-    
-}
-
-img {
-    display: inline-block;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    aspect-ratio: auto 247 / 329;
-    
-    height: 290px;
-}
-</style>
