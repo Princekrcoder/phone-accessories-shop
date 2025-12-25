@@ -126,7 +126,9 @@
   text-decoration: none;
 }
 
-.cart
+.cart-icon{
+  margin-left: ;
+}
 
 .user {
   display: flex;
