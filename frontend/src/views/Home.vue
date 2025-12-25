@@ -82,7 +82,7 @@ img {
     overflow-clip-margin: content-box;
     overflow: clip;
     aspect-ratio: auto 247 / 329;
-    width: 247px;
-    height: 329px;
+    
+    height: 290px;
 }
 </style>
