@@ -42,7 +42,7 @@ import {
             </div>
             <RouterLink to="/cart" class="cart-btn">
                 ₹2300000.00
-                <i class="bi bi-bag-fill" />
+                <i class="bi bi-bag-fill cart-icon" />
             </RouterLink>
 
         </div>
