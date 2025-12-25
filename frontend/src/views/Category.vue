@@ -10,7 +10,9 @@
 
             <!-- category-grid -->
              <div class="category-grid">
-                <div class="category-card">
+                <div class="category-card"
+                v-f
+                >
 
                 </div>
              </div>
