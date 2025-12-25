@@ -1,7 +1,7 @@
 <template>
     <div class="category-page">
         <!-- Top Button -->
-         <div id="top-button">4
+         <div class="top-button">
             <h3>
                 <b></b>
                 <span>Explore Our Categories</span>
@@ -9,8 +9,8 @@
             </h3>
 
             <!-- category-grid -->
-             <div id="category-grid">
-                <div id="category-card">
+             <div class="category-grid">
+                <div class="category-card">
 
                 </div>
              </div>
