@@ -29,7 +29,7 @@ const isMobileMenu = ref(false);
 
     <!-- --------------- DESKTOP HEADER --------------- -->
     <header class="main-header">
-        <div class="header-inner">>
+        <div class="header-inner">
 
             <!-- LOGO -->
             <div class="logo-wrapper">
