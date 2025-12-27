@@ -24,7 +24,8 @@ const isMobileMenu = ref(false);
     </div>
 
     <!-- --------------- DESKTOP HEADER --------------- -->
-    <header class="main-header">
+    <<header class="main-header">
+  <div class="header-inner">>
       
       <!-- LOGO -->
       <div class="logo-wrapper">
