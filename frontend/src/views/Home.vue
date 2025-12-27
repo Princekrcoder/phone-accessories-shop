@@ -10,7 +10,7 @@
     </section>
 
     <!-- Categories -->
-    <div class="container my-5">
+    <!-- <div class="container my-5">
         <h3 class="mb-3">Shop by Category</h3>
 
         <div class="row g-4">
@@ -21,7 +21,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Product List -->
     <div class="container my-4">
