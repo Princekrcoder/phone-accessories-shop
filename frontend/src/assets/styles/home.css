@@ -31,8 +31,8 @@
 .container {
   width: 92%;
   max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 6px 40px;
 }
 
 
