@@ -30,6 +30,11 @@
   }
 }
 
+@media (min-width: 850px) {
+  .product-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
 /* ---------- CARD ---------- */
 
 .product-card {
