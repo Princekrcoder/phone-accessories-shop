@@ -5,6 +5,8 @@
 .product-grid {
   display: grid;
   gap: 22px;
+  justify-content: center;
+  justify-items: center;
 }
 
 /* < 550px = 2 columns */
