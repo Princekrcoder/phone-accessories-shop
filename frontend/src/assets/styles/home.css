@@ -17,6 +17,24 @@
 }
 
 
+@media (min-width: 550px) and (max-width: 849px) {
+
+  .page-title {
+    font-size: 20px;
+  }
+
+  .result-line {
+    font-size: 13px;
+  }
+}
+
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
 .page-wrapper {
   background: #fafafa;
   min-height: 100vh;
