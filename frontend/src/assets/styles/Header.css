@@ -266,3 +266,59 @@
     gap: 4px;
   }
 }
+
+/* ===== MOBILE SLIDE MENU (70% WIDTH) ===== */
+
+/* dark background overlay */
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 9;
+}
+
+/* left drawer menu */
+.mobile-slide-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;              /* your requirement */
+  max-width: 340px;        /* optional safety */
+  height: 100vh;
+  background: #ffffff;
+  z-index: 10;
+
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  transform: translateX(-100%);   /* hidden initial */
+  animation: slideIn .25s forwards;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* pretty menu links */
+.mobile-slide-menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  padding: 6px 4px;
+}
+
+/* profile button centered */
+.mobile-slide-menu .profile-btn {
+  align-self: center;
+  font-size: 38px;
+}
+
+
+/* ===== ANIMATION ===== */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
