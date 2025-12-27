@@ -61,7 +61,9 @@ const isMobileMenu = ref(false);
           <i class="bi bi-person-circle" style="font-size: 32px;"></i>
         </button>
       </div>
-    </header>
+      </div>
+</header>
+
 
     <!-- --------------- MOBILE HEADER --------------- -->
     <div class="mobile-wrapper">
