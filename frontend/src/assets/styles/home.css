@@ -1,3 +1,20 @@
+@media (max-width: 549px) {
+
+  .container {
+    width: 96%;
+  }
+
+  .page-title {
+    font-size: 18px;
+    margin-top: 14px;
+  }
+
+  .result-line {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 6px;
+  }
+}
 
 
 .page-wrapper {
