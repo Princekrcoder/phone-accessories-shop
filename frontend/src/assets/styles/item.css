@@ -60,6 +60,11 @@
   }
 }
 
+@media (min-width: 550px) and (max-width: 849px) {
+  .product-img {
+    max-width: 160px;
+  }
+}
 
 
 /* ---------- BADGE ---------- */
