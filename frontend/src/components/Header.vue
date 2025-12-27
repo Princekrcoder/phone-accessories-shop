@@ -4,7 +4,6 @@ import { RouterLink } from "vue-router";
 
 import "@/assets/image/laxman-logo.png";
 
-// for opening/closing mobile menu
 const isMobileMenu = ref(false);
 </script>
 
@@ -64,46 +63,55 @@ const isMobileMenu = ref(false);
     </header>
 
     <!-- --------------- MOBILE HEADER --------------- -->
-    <!-- --------------- MOBILE HEADER --------------- -->
-<div class="mobile-wrapper">
+    <div class="mobile-wrapper">
 
-  <!-- TOP ROW: menu + search + cart -->
-  <div class="mobile-top-row">
+      <!-- TOP ROW: menu + search + cart -->
+      <div class="mobile-top-row">
 
-    <!-- MENU BUTTON -->
-    <button class="mobile-menu-toggle" @click="isMobileMenu = !isMobileMenu">
-      ☰
-    </button>
+        <!-- MENU BUTTON -->
+        <button class="mobile-menu-toggle" @click="isMobileMenu = true">
+          ☰
+        </button>
 
-    <!-- SEARCH FIELD -->
-    <div class="mobile-search-inline">
-      <input type="text" placeholder="Search..." />
-      <button>
-        <i class="bi bi-search"></i>
-      </button>
+        <!-- SEARCH FIELD -->
+        <div class="mobile-search-inline">
+          <input type="text" placeholder="Search..." />
+          <button>
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+
+        <!-- CART -->
+        <RouterLink to="/cart" class="mobile-cart-inline">
+          <i class="bi bi-bag-fill"></i>
+        </RouterLink>
+
+      </div>
+
+      <!-- DARK OVERLAY -->
+      <div
+        class="mobile-overlay"
+        v-if="isMobileMenu"
+        @click="isMobileMenu = false">
+      </div>
+
+      <!-- LEFT SLIDE DRAWER MENU (70% width) -->
+      <div class="mobile-slide-menu" v-if="isMobileMenu">
+
+        <!-- PROFILE FIRST -->
+        <button class="profile-btn">
+          <i class="bi bi-person-circle" style="font-size: 42px;"></i>
+        </button>
+
+        <hr>
+
+        <a href="#">Mobile Cover</a>
+        <a href="#">More</a>
+        <a href="#">Offer</a>
+
+      </div>
+
     </div>
-
-    <!-- CART -->
-    <RouterLink to="/cart" class="mobile-cart-inline">
-      <i class="bi bi-bag-fill"></i>
-    </RouterLink>
-
-  </div>
-
-  <!-- DROPDOWN MENU (opens below row) -->
-  <div class="mobile-menu" v-if="isMobileMenu">
-
-    <button class="profile-btn">
-      <i class="bi bi-person-circle" style="font-size: 36px;"></i>
-    </button>
-
-    <a href="#">Mobile Cover</a>
-    <a href="#">More</a>
-    <a href="#">Offer</a>
-  </div>
-
-</div>
-
 
   </div>
 </template>
