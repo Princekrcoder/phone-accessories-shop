@@ -52,6 +52,15 @@
   background: #fff;
 }
 
+/* ---- MOBILE IMAGE SMALLER ---- */
+@media (max-width: 549px) {
+  .product-img {
+    max-width: 140px;
+    aspect-ratio: 3 / 4;
+  }
+}
+
+
 
 /* ---------- BADGE ---------- */
 
