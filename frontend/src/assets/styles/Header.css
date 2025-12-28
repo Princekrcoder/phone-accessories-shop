@@ -45,7 +45,7 @@
 /* MAIN HEADER */
 .main-header {
   height: 70px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.85);
   padding: 0 40px;
   display: flex;
   align-items: center;
