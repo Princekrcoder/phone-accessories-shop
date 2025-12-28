@@ -1,3 +1,9 @@
+.top-bar,
+.main-header,
+.mobile-top-row {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
 
 
 /* WRAPPER */
@@ -8,7 +14,7 @@
   z-index: 1000;
   width: 100%;
   font-family: Arial, sans-serif;
-  
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
 /* TOP BAR (FULL WIDTH BACKGROUND) */
