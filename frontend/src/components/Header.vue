@@ -37,7 +37,7 @@ const isSearchOpen = ref(false);
           />
         </div>
 
-        <!-- NAVIGATION -->
+        <!-- NAV -->
         <nav class="nav-links">
           <a href="#"><b>MOBILE COVER</b></a>
           <a href="#"><b>MORE</b></a>
@@ -46,6 +46,7 @@ const isSearchOpen = ref(false);
 
         <!-- SEARCH + CART + USER -->
         <div class="header-actions">
+
           <div class="search-box">
             <input type="text" placeholder="Search..." />
             <button class="search-icon">
@@ -61,6 +62,7 @@ const isSearchOpen = ref(false);
           <button class="user">
             <i class="bi bi-person-circle" style="font-size: 32px;"></i>
           </button>
+
         </div>
 
       </div>
@@ -69,7 +71,6 @@ const isSearchOpen = ref(false);
     <!-- --------------- MOBILE HEADER --------------- -->
     <div class="mobile-wrapper">
 
-      <!-- TOP ROW: menu + search + cart -->
       <div class="mobile-top-row">
 
         <!-- MENU BUTTON -->
@@ -77,20 +78,35 @@ const isSearchOpen = ref(false);
           ☰
         </button>
 
-        <!-- SEARCH FIELD -->
-        <div class="mobile-search-inline">
-          <input type="text" placeholder="Search..." />
-          <button>
-            <i class="bi bi-search"></i>
-          </button>
+        <!-- SEARCH ICON - when search closed -->
+        <button
+          v-if="!isSearchOpen"
+          class="mobile-search-icon"
+          @click="isSearchOpen = true">
+          <i class="bi bi-search"></i>
+        </button>
+
+        <!-- LOGO - hide during search -->
+        <div v-if="!isSearchOpen" class="mobile-logo">
+          <img src="@/assets/image/laxman-logo.png" />
         </div>
 
-
-
-        <!-- CART -->
-        <RouterLink to="/cart" class="mobile-cart-inline">
+        <!-- CART - hide during search -->
+        <RouterLink
+          v-if="!isSearchOpen"
+          to="/cart"
+          class="mobile-cart-inline">
           <i class="bi bi-bag-fill"></i>
         </RouterLink>
+
+        <!-- ===== EXPANDED SEARCH BAR ===== -->
+        <div v-if="isSearchOpen" class="mobile-search-expanded">
+          <input type="text" placeholder="Search..." autofocus />
+
+          <button @click="isSearchOpen = false">
+            ✕
+          </button>
+        </div>
 
       </div>
 
@@ -101,15 +117,14 @@ const isSearchOpen = ref(false);
         @click="isMobileMenu = false">
       </div>
 
-      <!-- LEFT SLIDE DRAWER MENU (70% width) -->
+      <!-- SLIDE MENU -->
       <div class="mobile-slide-menu" v-if="isMobileMenu">
 
-        <!-- PROFILE FIRST -->
         <button class="profile-btn">
           <i class="bi bi-person-circle" style="font-size: 42px;"></i>
         </button>
 
-        <hr>
+        <hr />
 
         <a href="#">Mobile Cover</a>
         <a href="#">More</a>
