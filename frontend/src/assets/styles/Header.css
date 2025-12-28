@@ -257,6 +257,10 @@
     flex-direction: column;
     gap: 4px;
   }
+
+  .mobile-logo img {
+    height: 58px;
+  }
 }
 
 .header-inner {
