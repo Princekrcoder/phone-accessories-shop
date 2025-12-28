@@ -22,6 +22,11 @@ if not exist ".git" (
     git remote add origin https://github.com/Princekrcoder/phone-accessories-shop.git
 )
 
+REM ---------- create history file if not exists ----------
+if not exist push-history.log (
+    echo === Push History Log === > push-history.log
+)
+
 :loop
 cls
 echo ==========================================
@@ -37,12 +42,20 @@ IF NOT %ERRORLEVEL%==0 (
     echo Changes detected.
     git add .
     git commit -m "Auto commit: %date% %time%"
-    echo Pushing...
+    echo Pushing to GitHub...
     git push origin main
+
     echo Push completed at %time%
+    
+    REM ---- WRITE TO HISTORY LOG ----
+    echo %date% %time% - Auto push completed >> push-history.log
 ) ELSE (
     echo No changes found.
 )
+
+echo.
+echo -------- Recent Commit History --------
+git log --oneline -n 8
 
 echo.
 echo Next check in 30 seconds...
