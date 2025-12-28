@@ -5,6 +5,7 @@ import { RouterLink } from "vue-router";
 import "@/assets/image/laxman-logo.png";
 
 const isMobileMenu = ref(false);
+const isSearchOpen = ref(false);
 </script>
 
 <template>
