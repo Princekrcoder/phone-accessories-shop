@@ -12,7 +12,7 @@
 
 /* TOP BAR (FULL WIDTH BACKGROUND) */
 .top-bar {
-  background: #000;
+  background: rgba(0, 0, 0, 0.85);
   color: #fff;
   font-size: 13px;
 }
