@@ -78,12 +78,14 @@ const isSearchOpen = ref(false);
         </button>
 
         <!-- SEARCH FIELD -->
-        <div class="mobile-search-inline">
+        <!-- <div class="mobile-search-inline">
           <input type="text" placeholder="Search..." />
           <button>
             <i class="bi bi-search"></i>
           </button>
-        </div>
+        </div> -->
+
+        
 
         <!-- CART -->
         <RouterLink to="/cart" class="mobile-cart-inline">
