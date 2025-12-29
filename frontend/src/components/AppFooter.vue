@@ -6,6 +6,7 @@
         <div class="popular-searches">
             <span class="section-title">
                 <strong>POPULAR SEARCHES</strong>
+                
             </span>
 
             <p class="dis">
