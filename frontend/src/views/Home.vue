@@ -12,7 +12,7 @@
     <!-- Product List -->
     <!-- CATEGORY ROW LIST -->
 
-    .container my
+    .container
 
 </div>
 </template>
