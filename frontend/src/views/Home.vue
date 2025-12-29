@@ -27,8 +27,8 @@
           </RouterLink>
         </div>
 
-        <!-- Product Grid (auto wrap by screen size) -->
-        <div class="category-grid">
+        <!-- SINGLE ROW SCROLL CATEGORY LIST -->
+        <div class="category-row">
           <div
             v-for="n in cat.products"
             :key="n"
