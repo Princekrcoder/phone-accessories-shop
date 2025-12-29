@@ -33,5 +33,6 @@
   const route = useRoute();
   const slug = ref(route.params.slug);
 
-  // see
+  // selected category object
+  const currentCat
 </script>
