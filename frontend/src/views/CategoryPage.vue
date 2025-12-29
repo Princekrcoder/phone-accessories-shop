@@ -49,7 +49,10 @@
     ProductList.value = [];
 
     if(!currentCategory.value) {
-      
+      categoryTitle.value = "";
+      return;
     }
+
+    
   }
 </script>
