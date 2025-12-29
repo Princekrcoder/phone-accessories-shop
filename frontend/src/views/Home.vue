@@ -54,6 +54,6 @@ import "@/assets/styles/item.css";
 import { name } from "@vue/eslint-config-prettier/skip-formatting";
 
 const categories = [
-    {name: "Mobile Covers", slug: }
+    {name: "Mobile Covers", slug: "mobile-covers"},
 ] 
 </script>
