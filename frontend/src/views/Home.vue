@@ -15,7 +15,9 @@
     <div class="container my-4">
 
         <div
-        v-for="(cat, index) in categories"
+        v-for="(cat, index) in categories.slice(0, 20)"
+        :key="index"
+        
         >
 
         </div>
