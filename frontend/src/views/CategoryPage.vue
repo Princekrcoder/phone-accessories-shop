@@ -12,8 +12,10 @@
     <!-- Not Found -->
 
     <div v-if="!ProductList.lenght" class="no-result">
-      No products avail
+      No products available in this category
     </div>
+
+    Product
 
   </div>
 </template>
