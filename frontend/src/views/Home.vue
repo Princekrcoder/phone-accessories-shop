@@ -73,12 +73,22 @@ const categories = [
     {
         name: "Smart Watches",
         slug: "smart-watches",
-        products: 6
+        products: 16
     },
     {
         name: "Screen Protectors",
         slug: "screen-protectors",
-        products: 8
+        products: 88
+    },
+    {
+        name: "Wireless Chargers",
+        slug: "wireless-chargers",
+        products: 9
+    },
+    {
+        name: "Car Accessories",
+        slug: "car-accessories",
+        products: 14
     }
 ] 
 </script>
