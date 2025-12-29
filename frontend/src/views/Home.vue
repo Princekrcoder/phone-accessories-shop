@@ -159,6 +159,15 @@ const categories = [
         name: "Health Tech",
         slug: "health-tech",
         products: 21
+    },
+    {
+        name: "Travel Accessories",
+        slug: "travel-accessories",
+        products: 22
+    },
+    {name: "Photography Accessories",
+        slug: "photography-accessories",
+        products: 23
     }
 ] 
 </script>
