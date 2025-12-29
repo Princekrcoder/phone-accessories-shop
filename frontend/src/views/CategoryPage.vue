@@ -47,6 +47,9 @@
     currentCategory.value = categories.find(c => c.slug === slug.value);
 
     ProductList.value = [];
-    
+
+    if(!currentCategory.value) {
+      
+    }
   }
 </script>
