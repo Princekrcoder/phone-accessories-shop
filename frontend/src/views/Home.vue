@@ -28,7 +28,7 @@
         </div>
 
         <!-- Product Grid (auto wrap by screen size) -->
-        <div class="product-grid">
+        <div class="category-grid">
           <div
             v-for="n in cat.products"
             :key="n"
