@@ -39,5 +39,9 @@
   // category title
   const categoryTitle = ref("");
 
+  // products list for the category
+  const ProductList = ref([]);
+
+  // function to load category data based on slug
   
 </script>
