@@ -21,7 +21,7 @@
         >
 
         <!-- ROW TITLE -->
-         <div class></div>
+         <div class="d-flex justify"></div>
         </div>
 
     </div>
