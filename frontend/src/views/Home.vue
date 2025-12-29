@@ -123,22 +123,22 @@ const categories = [
     {
         name: "Computer Accessories",
         slug: "computer-accessories",
-        products: 4
+        products: 14
     },
     {
         name: "Networking Devices",
         slug: "networking-devices",
-        products: 3
+        products: 13
     },
     {
         name: "TV & Home Entertainment",
         slug: "tv-home-entertainment",
-        products: 2
+        products: 12
     },
     {
         name: "Office Electronics",
         slug: "office-electronics",
-        products: 1
+        products: 11
     },
     {
         name: "Audio Equipment",
@@ -165,7 +165,8 @@ const categories = [
         slug: "travel-accessories",
         products: 22
     },
-    {name: "Photography Accessories",
+    {
+        name: "Photography Accessories",
         slug: "photography-accessories",
         products: 23
     }
