@@ -10,33 +10,7 @@
     </section>
 
     <!-- Product List -->
-    <div class="container my-4">
-        <h3 class="mb-3">Latest Products</h3>
-
-        <!-- your responsive CSS grid -->
-        <div class="product-grid">
-            <div v-for="n in 8" :key="n" class="product-card">
-
-                <span class="badge-discount">-20%</span>
-
-                <img :src="`https://picsum.photos/500?product-${n}`" class="product-img" />
-
-                <h6 class="product-name">
-                    Product {{ n }}
-                </h6>
-
-                <p class="price">
-                    ₹999
-                    <span class="old-price">₹1299</span>
-                </p>
-
-                <button class="add-btn">
-                    <b class="add-name">ADD TO CART</b>
-                </button>
-
-            </div>
-        </div>
-    </div>
+    CATEGORY ROW LIST
 
 </div>
 </template>
