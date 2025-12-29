@@ -89,6 +89,21 @@ const categories = [
         name: "Car Accessories",
         slug: "car-accessories",
         products: 14
+    },
+    {
+        name: "Audio Accessories",
+        slug: "audio-accessories",
+        products: 11
+    },
+    {
+        name: "Smart Home Devices",
+        slug: "smart-home-devices",
+        products: 7
+    },
+    {
+        name: "Gaming Accessories",
+        slug: "gaming-accessories",
+        products: 13
     }
 ] 
 </script>
