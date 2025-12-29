@@ -31,5 +31,7 @@
   import { categories } from "@/data/categories";
 
   const route = useRoute();
-  const slug = 
+  const slug = ref(route.params.slug);
+
+  // see
 </script>
