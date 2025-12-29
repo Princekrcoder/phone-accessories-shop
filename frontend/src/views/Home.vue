@@ -146,7 +146,19 @@ const categories = [
         products: 18
     },
     {
-        
+        name: "Virtual Reality Gear",
+        slug: "virtual-reality-gear",
+        products: 19
+    },
+    {
+        name: "Smart Lighting",
+        slug: "smart-lighting",
+        products: 20
+    },
+    {
+        name: "Health Tech",
+        slug: "health-tech",
+        products: 21
     }
 ] 
 </script>
