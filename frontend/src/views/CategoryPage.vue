@@ -1,3 +1,6 @@
 <template>
-  <div class="container pap"></div>
+  <div class="container page-wrapper">
+
+    <h2 class="page-title"></h2>
+  </div>
 </template>
