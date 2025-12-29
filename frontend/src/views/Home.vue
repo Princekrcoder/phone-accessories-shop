@@ -55,6 +55,20 @@ import { name } from "@vue/eslint-config-prettier/skip-formatting";
 
 const categories = [
     {name: "Mobile Covers", slug: "mobile-covers", products: 12},
-    
+    {
+        name: "Chargers & Cables",
+        slug: "chargers-cables",
+        products: 10
+    },
+    {
+        name: "Power Banks",
+        slug: "power-banks",
+        products: 5
+    },
+    {
+        name: "Screen Protectors",
+        slug: "screen-protectors",
+        products: 8
+    }
 ] 
 </script>
