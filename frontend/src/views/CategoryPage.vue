@@ -5,20 +5,43 @@
       {{ categoryTitle || "Category Not Found" }}
     </h2>
 
-    <p class="result-line" v-if="ProductList.length">
-      showing {{ ProductList.lemgth }} products
+    <p class="result-line" v-if="products.length">
+      Showing {{ products.length }} products
     </p>
 
     <!-- Not Found -->
-
-    <div v-if="!ProductList.lenght" class="no-result">
+    <div v-if="!products.length" class="no-result">
       No products available in this category
     </div>
 
-    <!-- Product Grid -->
-     <div class="product-grid" v-if="ProductList.length">
-      
-     </div>
+    <!-- PRODUCT GRID -->
+    <div class="product-grid" v-if="products.length">
+      <div
+        v-for="(p, i) in products"
+        :key="i"
+        class="product-card"
+      >
+        <span class="badge-discount">-20%</span>
+
+        <img
+          :src="`https://picsum.photos/400?cat-${slug}-${i}`"
+          class="product-img"
+        />
+
+        <h6 class="product-name">
+          {{ p.name }}
+        </h6>
+
+        <p class="price">
+          ₹999
+          <span class="old-price">₹1299</span>
+        </p>
+
+        <button class="add-btn">
+          ADD TO CART
+        </button>
+      </div>
+    </div>
 
   </div>
 </template>
