@@ -94,18 +94,25 @@
   text-decoration: none;
 }
 
-/* ---------- CATEGORY ROW (HORIZONTAL SCROLL) ---------- */
+/* ---------- CATEGORY ROW (HORIZONTAL SCROLL — ONE ROW ONLY) ---------- */
 
 .category-row {
   display: flex;
   gap: 14px;
-  overflow-x: auto;
+
+  /* KEY POINTS */
+  flex-wrap: nowrap;             /* wrap band */
+  overflow-x: auto;              /* horizontal scroll */
+  overflow-y: hidden;            /* vertical hide */
   padding: 4px 0 8px 0;
-  scroll-snap-type: x mandatory;
+
+  scroll-snap-type: x mandatory; /* snapping */
+  -webkit-overflow-scrolling: touch; /* smooth iOS scroll */
 }
 
 .category-row > * {
   scroll-snap-align: start;
+  flex: 0 0 auto;                 /* item shrink na ho */
 }
 
 /* scrollbar */
@@ -116,4 +123,11 @@
 .category-row::-webkit-scrollbar-thumb {
   background: #bfbfbf;
   border-radius: 20px;
+}
+
+/* optional: scrollbar hide on mobile */
+@media (max-width: 549px) {
+  .category-row::-webkit-scrollbar {
+    display: none;
+  }
 }
