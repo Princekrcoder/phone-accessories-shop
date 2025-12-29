@@ -14,8 +14,10 @@
 
     <div class="container my-4">
 
-        <div>
-            
+        <div
+        v-for
+        >
+
         </div>
 
     </div>
