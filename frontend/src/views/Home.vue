@@ -98,7 +98,7 @@ const categories = [
     {
         name: "Smart Home Devices",
         slug: "smart-home-devices",
-        products: 7
+        products: 17
     },
     {
         name: "Gaming Accessories",
@@ -108,7 +108,7 @@ const categories = [
     {
         name: "Wearable Tech",
         slug: "wearable-tech",
-        products: 8
+        products: 18
     },
     {
         name: "Fitness Trackers",
