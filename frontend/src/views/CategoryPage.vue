@@ -74,5 +74,5 @@
       slug.value = newSlug;
       loadCatrgory();
     }
-  )
+  );
 </script>
