@@ -52,5 +52,7 @@ import {
 import "@/assets/styles/home.css";
 import "@/assets/styles/item.css";
 
-const category 
+const categories = [
+    
+] 
 </script>
