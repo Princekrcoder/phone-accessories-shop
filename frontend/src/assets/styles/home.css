@@ -94,40 +94,31 @@
   text-decoration: none;
 }
 
-/* ---------- CATEGORY ROW (HORIZONTAL SCROLL — ONE ROW ONLY) ---------- */
+/* ---------- CATEGORY GRID (AUTO FIT ITEMS IN ROW) ---------- */
 
-.category-row {
-  display: flex;
+.category-grid {
+  display: grid;
   gap: 14px;
-
-  /* KEY POINTS */
-  flex-wrap: nowrap;             /* wrap band */
-  overflow-x: auto;              /* horizontal scroll */
-  overflow-y: hidden;            /* vertical hide */
-  padding: 4px 0 8px 0;
-
-  scroll-snap-type: x mandatory; /* snapping */
-  -webkit-overflow-scrolling: touch; /* smooth iOS scroll */
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
 }
 
-.category-row > * {
-  scroll-snap-align: start;
-  flex: 0 0 auto;                 /* item shrink na ho */
-}
-
-/* scrollbar */
-.category-row::-webkit-scrollbar {
-  height: 6px;
-}
-
-.category-row::-webkit-scrollbar-thumb {
-  background: #bfbfbf;
-  border-radius: 20px;
-}
-
-/* optional: scrollbar hide on mobile */
+/* < 550px = 2 columns */
 @media (max-width: 549px) {
-  .category-row::-webkit-scrollbar {
-    display: none;
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 550–849px = 3 columns */
+@media (min-width: 550px) and (max-width: 849px) {
+  .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* >= 850px = 5 columns */
+@media (min-width: 850px) {
+  .category-grid {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
