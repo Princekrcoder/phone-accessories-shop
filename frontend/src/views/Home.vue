@@ -10,7 +10,9 @@
     </section>
 
     <!-- Product List -->
-    CATEGORY ROW LIST
+    <!-- CATEGORY ROW LIST -->
+
+    .container my
 
 </div>
 </template>
