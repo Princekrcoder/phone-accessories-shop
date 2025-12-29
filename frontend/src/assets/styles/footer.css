@@ -11,17 +11,23 @@
 .section-title {
   position: relative;
   display: inline-block;
+  padding-bottom: 6px; /* spacing between text and underline */
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  bottom: 0; /* sits just under text */
+
+  width: 100%;
   height: 9px;
-  background: url('/image/underline.png') center top no-repeat;
-  background-size: 100% 9px;
+
+  background: url('@/assets/image/underline.png') no-repeat center top;
+  background-size: contain; /* keeps image proportional */
+  pointer-events: none;
 }
 
 /* ---------- Footer Background (FULL WIDTH) ---------- */
