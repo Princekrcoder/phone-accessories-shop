@@ -5,6 +5,8 @@
       {{ categoryTitle || "Category Not Found" }}
     </h2>
 
-    <p class="result"></p>
+    <p class="result-line" v-if="ProductList.length">
+      
+    </p>
   </div>
 </template>
