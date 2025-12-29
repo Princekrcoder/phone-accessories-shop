@@ -11,7 +11,7 @@
 
     <!-- Not Found -->
 
-    <div v></div>
+    <div v-if="!ProductList.lenght" class=""></div>
 
   </div>
 </template>
