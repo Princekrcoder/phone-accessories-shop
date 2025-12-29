@@ -104,6 +104,21 @@ const categories = [
         name: "Gaming Accessories",
         slug: "gaming-accessories",
         products: 13
+    },
+    {
+        name: "Wearable Tech",
+        slug: "wearable-tech",
+        products: 8
+    },
+    {
+        name: "Fitness Trackers",
+        slug: "fitness-trackers",
+        products: 5
+    },
+    {
+        name: "Cameras & Drones",
+        slug: "cameras-drones",
+        products: 6
     }
 ] 
 </script>
