@@ -17,7 +17,7 @@
 
     <!-- Product Grid -->
      <div class="product-grid" v-if="ProductList.length">
-
+      
      </div>
 
   </div>
