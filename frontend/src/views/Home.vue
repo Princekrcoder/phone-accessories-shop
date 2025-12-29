@@ -9,19 +9,7 @@
         </div>
     </section>
 
-    <!-- Categories -->
-    <!-- <div class="container my-5">
-        <h3 class="mb-3">Shop by Category</h3>
-
-        <div class="row g-4">
-            <div class="col-6 col-md-3" v-for="n in 4" :key="n">
-                <div class="cat-box">
-                    <img :src="`https://picsum.photos/200?category-${n}`" />
-                    <p>Category {{ n }}</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
+    
 
     <!-- Product List -->
     <div class="container my-4">
