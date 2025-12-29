@@ -15,7 +15,7 @@
     <div class="container my-4">
 
         <div
-        v-for
+        v-for="(cat, index) in categories"
         >
 
         </div>
