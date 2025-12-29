@@ -119,6 +119,34 @@ const categories = [
         name: "Cameras & Drones",
         slug: "cameras-drones",
         products: 6
+    },
+    {
+        name: "Computer Accessories",
+        slug: "computer-accessories",
+        products: 4
+    },
+    {
+        name: "Networking Devices",
+        slug: "networking-devices",
+        products: 3
+    },
+    {
+        name: "TV & Home Entertainment",
+        slug: "tv-home-entertainment",
+        products: 2
+    },
+    {
+        name: "Office Electronics",
+        slug: "office-electronics",
+        products: 1
+    },
+    {
+        name: "Audio Equipment",
+        slug: "audio-equipment",
+        products: 18
+    },
+    {
+        
     }
 ] 
 </script>
