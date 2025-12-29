@@ -51,4 +51,6 @@ import {
 } from "vue-router";
 import "@/assets/styles/home.css";
 import "@/assets/styles/item.css";
+
+const category 
 </script>
