@@ -6,7 +6,7 @@
         <div class="popular-searches">
             <span class="section-title">
                 <strong>POPULAR SEARCHES</strong>
-                <img src="@/assets/image/underline.png" alt="">
+                <img class="underline-img" src="@/assets/image/underline.png" alt="">
             </span>
 
             <p class="dis">
