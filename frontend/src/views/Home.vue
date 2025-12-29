@@ -9,24 +9,57 @@
         </div>
     </section>
 
-    <!-- Product List -->
     <!-- CATEGORY ROW LIST -->
+<div class="container my-4">
 
-    <div class="container my-4">
+  <div
+    v-for="(cat, index) in categories.slice(0, 20)"
+    :key="index"
+    class="category-section"
+  >
+    <!-- Row Title -->
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h3>{{ cat.name }}</h3>
 
-        <div
-        v-for="(cat, index) in categories.slice(0, 20)"
-        :key="index"
-        class="category-section"
-        >
+      <RouterLink :to="`/category/${cat.slug}`" class="view-all">
+        View All
+      </RouterLink>
+    </div>
 
-        <!-- ROW TITLE -->
-         <div class="d-flex justify-content-between align-items-center mb-2">
-            <h3>{{ cat.name }}</h3>
+    <!-- Product Row -->
+    <div class="category-row">
+      <div
+        v-for="n in cat.products"
+        :key="n"
+        class="product-card"
+      >
+        <span class="badge-discount">-20%</span>
 
-            
-         </div>
-        </div>
+        <img
+          :src="`https://picsum.photos/400?random-${index}${n}`"
+          class="product-img"
+        />
+
+        <h6 class="product-name">
+          {{ cat.name }} Product {{ n }}
+        </h6>
+
+        <p class="price">
+          ₹999
+          <span class="old-price">₹1299</span>
+        </p>
+
+        <button class="add-btn">
+          <b class="add-name">ADD TO CART</b>
+        </button>
+      </div>
+    </div>
+
+    <hr />
+  </div>
+
+</div>
+
 
     </div>
 
