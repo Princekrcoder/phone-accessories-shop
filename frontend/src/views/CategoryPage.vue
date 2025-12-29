@@ -36,5 +36,8 @@
   // selected category object
   const currentCategory = ref(null);
 
-  //
+  // category title
+  const categoryTitle = ref("");
+
+  
 </script>
