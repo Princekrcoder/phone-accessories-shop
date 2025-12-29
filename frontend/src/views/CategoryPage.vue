@@ -64,5 +64,11 @@
         image: `https://picsum.photos/400?random-${slug.value}-${i}`
       });
     }
-  }
+  };
+
+  loadCatrgory();
+
+  watch(
+    
+  )
 </script>
