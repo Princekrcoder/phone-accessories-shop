@@ -17,9 +17,10 @@
         <div
         v-for="(cat, index) in categories.slice(0, 20)"
         :key="index"
-        
+        class="category-section"
         >
 
+        <
         </div>
 
     </div>
