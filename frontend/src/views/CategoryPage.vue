@@ -34,5 +34,7 @@
   const slug = ref(route.params.slug);
 
   // selected category object
-  const currentCat
+  const currentCategory = ref(null);
+
+  //
 </script>
