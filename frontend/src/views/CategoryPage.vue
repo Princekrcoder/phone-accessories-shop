@@ -16,7 +16,7 @@
     </div>
 
     <!-- Product Grid -->
-     <div ></div>
+     <div class="product-grid" v-if="ProductList.length"></div>
 
   </div>
 </template>
