@@ -43,5 +43,7 @@
   const ProductList = ref([]);
 
   // function to load category data based on slug
-  const loadCatrg
+  const loadCatrgory = () => {
+    currentCategory.value = categories.find
+  }
 </script>
