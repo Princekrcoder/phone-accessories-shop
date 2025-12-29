@@ -113,12 +113,12 @@ const categories = [
     {
         name: "Fitness Trackers",
         slug: "fitness-trackers",
-        products: 5
+        products: 15
     },
     {
         name: "Cameras & Drones",
         slug: "cameras-drones",
-        products: 6
+        products: 16
     },
     {
         name: "Computer Accessories",
