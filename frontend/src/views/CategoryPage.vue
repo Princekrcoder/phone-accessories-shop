@@ -69,6 +69,10 @@
   loadCatrgory();
 
   watch(
-    
+    () => route.params.slug,
+    (newSlug) => {
+      slug.value = newSlug;
+      loadCatrgory();
+    }
   )
 </script>
