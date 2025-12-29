@@ -15,7 +15,8 @@
       No products available in this category
     </div>
 
-    Product
+    <!-- Product Grid -->
+     <div ></div>
 
   </div>
 </template>
