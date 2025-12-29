@@ -20,7 +20,8 @@
         class="category-section"
         >
 
-        <
+        <!-- ROW TITLE -->
+         <div class></div>
         </div>
 
     </div>
