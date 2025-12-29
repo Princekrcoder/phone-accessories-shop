@@ -9,8 +9,6 @@
         </div>
     </section>
 
-    
-
     <!-- Product List -->
     <div class="container my-4">
         <h3 class="mb-3">Latest Products</h3>
@@ -35,13 +33,11 @@
                 <button class="add-btn">
                     <b class="add-name">ADD TO CART</b>
                 </button>
-                
 
             </div>
         </div>
     </div>
 
-    
 </div>
 </template>
 
@@ -51,10 +47,15 @@ import {
 } from "vue-router";
 import "@/assets/styles/home.css";
 import "@/assets/styles/item.css";
-import { name } from "@vue/eslint-config-prettier/skip-formatting";
+import {
+    name
+} from "@vue/eslint-config-prettier/skip-formatting";
 
-const categories = [
-    {name: "Mobile Covers", slug: "mobile-covers", products: 12},
+const categories = [{
+        name: "Mobile Covers",
+        slug: "mobile-covers",
+        products: 12
+    },
     {
         name: "Chargers & Cables",
         slug: "chargers-cables",
@@ -170,5 +171,5 @@ const categories = [
         slug: "photography-accessories",
         products: 23
     }
-] 
+]
 </script>
