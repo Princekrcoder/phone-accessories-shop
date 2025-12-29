@@ -53,6 +53,16 @@
       return;
     }
 
-    
+    categoryTitle.value = currentCategory.value.name;
+
+    for(let i = 1; i <= currentCategory.value.products; i++) {
+      ProductList.value.push({
+        id: i,
+        name: `${currentCategory.value.name} Product ${i}`,
+        price: 999,
+        oldPrice: 1299,
+        image: `https://picsum.photos/400?random-${slug.value}-${i}`
+      });
+    }
   }
 </script>
