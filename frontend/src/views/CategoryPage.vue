@@ -11,7 +11,9 @@
 
     <!-- Not Found -->
 
-    <div v-if="!ProductList.lenght" class=""></div>
+    <div v-if="!ProductList.lenght" class="no-result">
+      No products avail
+    </div>
 
   </div>
 </template>
