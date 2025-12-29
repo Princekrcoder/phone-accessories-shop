@@ -22,7 +22,7 @@
 
         <!-- ROW TITLE -->
          <div class="d-flex justify-content-between align-items-center mb-2">
-            <h3>{cat.name}</h3>
+            <h3>{{ cat.name }}</h3>
          </div>
         </div>
 
