@@ -12,7 +12,13 @@
     <!-- Product List -->
     <!-- CATEGORY ROW LIST -->
 
-    .container
+    <div class="container my-4">
+
+        <div>
+            
+        </div>
+
+    </div>
 
 </div>
 </template>
