@@ -44,6 +44,8 @@
 
   // function to load category data based on slug
   const loadCatrgory = () => {
-    currentCategory.value = categories.find
+    currentCategory.value = categories.find(c => c.slug === slug.value);
+
+    
   }
 </script>
