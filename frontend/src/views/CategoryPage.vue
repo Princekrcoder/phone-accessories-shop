@@ -43,5 +43,5 @@
   const ProductList = ref([]);
 
   // function to load category data based on slug
-  
+  const loadCatrg
 </script>
