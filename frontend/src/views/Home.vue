@@ -63,7 +63,17 @@ const categories = [
     {
         name: "Power Banks",
         slug: "power-banks",
-        products: 5
+        products: 15
+    },
+    {
+        name: "Headphones",
+        slug: "headphones",
+        products: 17
+    },
+    {
+        name: "Smart Watches",
+        slug: "smart-watches",
+        products: 6
     },
     {
         name: "Screen Protectors",
