@@ -2,21 +2,24 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Cart from '@/views/Cart.vue'
 import Home from '@/views/Home.vue'
 
-
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/cart',
       name: 'Cart',
-      component: Cart
+      component: Cart,
     },
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
     },
-    
+    {
+      path: '/category/:slug',
+      name: 'CategoryPage',
+      component: ,
+    },
   ],
 })
 
