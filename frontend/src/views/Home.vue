@@ -21,7 +21,7 @@
         >
 
         <!-- ROW TITLE -->
-         <div class="d-flex justify"></div>
+         <div class="d-flex justify-content-between align-items-center"></div>
         </div>
 
     </div>
