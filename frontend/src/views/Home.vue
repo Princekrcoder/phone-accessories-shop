@@ -27,8 +27,8 @@
           </RouterLink>
         </div>
 
-        <!-- Product Row -->
-        <div class="category-row">
+        <!-- Product Grid (auto wrap by screen size) -->
+        <div class="product-grid">
           <div
             v-for="n in cat.products"
             :key="n"
@@ -66,8 +66,6 @@
 
 <script setup>
 import { RouterLink } from "vue-router";
-
-// shared category data file
 import { categories } from "@/data/categories";
 
 import "@/assets/styles/home.css";
