@@ -26,5 +26,9 @@
 <script setup>
 
   import { ref, watch} from "vue";
-  
+  import { useRoute } from "vue-router";
+
+  import { categories } from "@/data/categories";
+
+  const route = useRoute();
 </script>
