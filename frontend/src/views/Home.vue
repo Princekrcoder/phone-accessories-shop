@@ -51,8 +51,9 @@ import {
 } from "vue-router";
 import "@/assets/styles/home.css";
 import "@/assets/styles/item.css";
+import { name } from "@vue/eslint-config-prettier/skip-formatting";
 
 const categories = [
-    
+    {name}
 ] 
 </script>
