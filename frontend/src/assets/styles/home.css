@@ -94,31 +94,29 @@
   text-decoration: none;
 }
 
-/* ---------- CATEGORY GRID (AUTO FIT ITEMS IN ROW) ---------- */
+/* ---------- CATEGORY ROW (STRICT SINGLE ROW WITH SCROLL) ---------- */
 
-.category-grid {
-  display: grid;
+.category-row {
+  display: flex;
   gap: 14px;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+
+  flex-wrap: nowrap;          /* second line never */
+  overflow-x: auto;           /* horizontal scroll */
+  overflow-y: hidden;
+
+  padding: 4px 0 8px 0;
+
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
-/* < 550px = 2 columns */
-@media (max-width: 549px) {
-  .category-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.category-row > * {
+  flex: 0 0 auto;             /* prevent wrapping */
+  scroll-snap-align: start;
 }
 
-/* 550–849px = 3 columns */
-@media (min-width: 550px) and (max-width: 849px) {
-  .category-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* >= 850px = 5 columns */
-@media (min-width: 850px) {
-  .category-grid {
-    grid-template-columns: repeat(5, 1fr);
-  }
+/* fixed width product card so wrapping cannot happen */
+.category-row .product-card {
+  width: 150px;
+  min-width: 150px;
 }
