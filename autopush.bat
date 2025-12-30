@@ -5,7 +5,7 @@ setlocal enabledelayedexpansion
 
 REM ================= PATHS =================
 set REPO_30S=E:\phone-accessories-shop
-set REPO_1H=E:\phone_accessories_shop
+set REPO_1H=E:\phone-accessories-shop
 
 REM ============== GIT ID ===================
 set GIT_NAME=Princekrcoder
