@@ -1,83 +1,74 @@
 @echo off
-title Auto Git Pusher - Phone Accessories Shop
+title Auto Git Pusher - Dual Repo
 color 0A
-
 setlocal enabledelayedexpansion
 
+REM ================= PATHS =================
+set REPO_30S=E:\phone-accessories-shop
+set REPO_1H=E:\phone_accessories_shop
+
+REM ============== GIT ID ===================
+set GIT_NAME=Princekrcoder
+set GIT_EMAIL=princekrcoder@gmail.com
+
+REM ============ HOUR TRACK =================
+set LAST_PUSH_HOUR=
+
 echo ==========================================
-echo   Auto Git Pusher - Phone Accessories Shop
-echo   Interval: Every 30 Seconds
+echo   AUTO GIT PUSHER
+echo   Repo-1 : Every 30 Seconds
+echo   Repo-2 : Every 1 Hour
 echo ==========================================
-echo Close terminal or press CTRL + C to stop
+echo CTRL + C to stop
 echo.
-
-cd /d "E:\phone-accessories-shop" || (
-    echo ERROR: Project folder not found
-    pause
-    exit /b
-)
-
-REM ---- Git setup ----
-if not exist ".git" (
-    git init
-    git branch -M main
-    git remote add origin https://github.com/Princekrcoder/phone-accessories-shop.git
-)
-
-git config --local user.name "Princekrcoder"
-git config --local user.email "princekrcoder@gmail.com"
-
-
-if not exist push-history.log (
-    echo === Push History === > push-history.log
-)
 
 :loop
 echo ------------------------------------------
 echo Time: %date% %time%
-echo Checking for changes...
 
-REM ---- Detect tracked OR untracked changes ----
+REM =================================================
+REM =============== REPO 1 (30 SEC) =================
+REM =================================================
+cd /d "%REPO_30S%" || goto hour_repo
+
+git config --local user.name "%GIT_NAME%"
+git config --local user.email "%GIT_EMAIL%"
+
 git diff --quiet
-set DIFF_ERROR=%errorlevel%
-
-git ls-files --others --exclude-standard >nul
-set UNTRACKED_ERROR=%errorlevel%
-
-if %DIFF_ERROR% neq 0 (
-    set CHANGED=1
-) else if %UNTRACKED_ERROR% neq 1 (
-    set CHANGED=1
-) else (
-    set CHANGED=0
-)
-
-if %CHANGED%==1 (
-    echo ✔ Changes found → committing...
-
+if errorlevel 1 (
     git add .
-    git commit -m "Auto commit: %date% %time%"
-
-    echo 🔼 Pushing to GitHub...
+    git commit -m "Auto commit (30s): %date% %time%"
     git push origin main
-
-    if !errorlevel! EQU 0 (
-        echo ✅ PUSH SUCCESS at %time%
-        echo %date% %time% - PUSH SUCCESS >> push-history.log
-    ) else (
-        echo ❌ PUSH FAILED – trying pull & retry
-        git pull origin main --rebase
-        git push origin main
-        echo %date% %time% - PUSH RETRY >> push-history.log
-    )
+    echo ✅ [30s] PUSHED
 ) else (
-    echo ⏳ No changes detected
+    echo ⏳ [30s] No changes
 )
 
-echo.
-echo Recent commits:
-git log --oneline -3
+REM =================================================
+REM =============== REPO 2 (1 HOUR) =================
+REM =================================================
+:hour_repo
+for /f "tokens=1 delims=:" %%H in ("%time%") do set CURRENT_HOUR=%%H
 
-echo Waiting 30 seconds...
+if NOT "%CURRENT_HOUR%"=="%LAST_PUSH_HOUR%" (
+    set LAST_PUSH_HOUR=%CURRENT_HOUR%
+
+    cd /d "%REPO_1H%" || goto wait
+
+    git config --local user.name "%GIT_NAME%"
+    git config --local user.email "%GIT_EMAIL%"
+
+    git diff --quiet
+    if errorlevel 1 (
+        git add .
+        git commit -m "Auto commit (1h): %date% %time%"
+        git push origin main
+        echo ✅ [1h] PUSHED
+    ) else (
+        echo ⏳ [1h] No changes
+    )
+)
+
+:wait
 timeout /t 30 /nobreak >nul
 goto loop
