@@ -25,7 +25,8 @@ if not exist ".git" (
 )
 
 git config --local user.name "Princekrcoder"
-git config --local user.email "your-email@example.com"
+git config --local user.email "princekrcoder@gmail.com"
+
 
 if not exist push-history.log (
     echo === Push History === > push-history.log
