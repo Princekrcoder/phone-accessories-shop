@@ -1,5 +1,5 @@
 @echo off
-title Auto Git Pusher - Dual Repo
+title Auto Git Pusher - Dual Repo (Fixed Timer)
 color 0A
 setlocal enabledelayedexpansion
 
@@ -11,13 +11,13 @@ REM ============== GIT ID ===================
 set GIT_NAME=Princekrcoder
 set GIT_EMAIL=princekrcoder@gmail.com
 
-REM ============ HOUR TRACK =================
-set LAST_PUSH_HOUR=
+REM ============ TIMER ======================
+set /a HOUR_COUNTER=0
 
 echo ==========================================
 echo   AUTO GIT PUSHER
 echo   Repo-1 : Every 30 Seconds
-echo   Repo-2 : Every 1 Hour
+echo   Repo-2 : Start + Every 1 Hour
 echo ==========================================
 echo CTRL + C to stop
 echo.
@@ -30,9 +30,6 @@ REM =================================================
 REM =============== REPO 1 (30 SEC) =================
 REM =================================================
 cd /d "%REPO_30S%" || goto hour_repo
-
-git config --local user.name "%GIT_NAME%"
-git config --local user.email "%GIT_EMAIL%"
 
 git diff --quiet
 if errorlevel 1 (
@@ -48,27 +45,32 @@ REM =================================================
 REM =============== REPO 2 (1 HOUR) =================
 REM =================================================
 :hour_repo
-for /f "tokens=1 delims=:" %%H in ("%time%") do set CURRENT_HOUR=%%H
+if %HOUR_COUNTER%==0 (
+    call :PUSH_HOUR
+)
 
-if NOT "%CURRENT_HOUR%"=="%LAST_PUSH_HOUR%" (
-    set LAST_PUSH_HOUR=%CURRENT_HOUR%
-
-    cd /d "%REPO_1H%" || goto wait
-
-    git config --local user.name "%GIT_NAME%"
-    git config --local user.email "%GIT_EMAIL%"
-
-    git diff --quiet
-    if errorlevel 1 (
-        git add .
-        git commit -m "Auto commit (1h): %date% %time%"
-        git push origin main
-        echo ✅ [1h] PUSHED
-    ) else (
-        echo ⏳ [1h] No changes
-    )
+set /a HOUR_COUNTER+=30
+if %HOUR_COUNTER% GEQ 3600 (
+    set /a HOUR_COUNTER=0
 )
 
 :wait
 timeout /t 30 /nobreak >nul
 goto loop
+
+REM =================================================
+REM =============== PUSH FUNCTION ===================
+REM =================================================
+:PUSH_HOUR
+cd /d "%REPO_1H%" || exit /b
+
+git diff --quiet
+if errorlevel 1 (
+    git add .
+    git commit -m "Auto commit (1h): %date% %time%"
+    git push origin main
+    echo ✅ [1h] PUSHED
+) else (
+    echo ⏳ [1h] No changes
+)
+exit /b
