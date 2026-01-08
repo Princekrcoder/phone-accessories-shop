@@ -74,7 +74,8 @@ const isSearchOpen = ref(false);
       <div class="mobile-top-row">
 
         <!-- MENU BUTTON -->
-        <button class="mobile-menu-toggle" @click="isMobileMenu = true">
+        <button class="mobile-menu-toggle" @click="isMobileMenu = !isMobileMenu">
+
           ☰
         </button>
 
