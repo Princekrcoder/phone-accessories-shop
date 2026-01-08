@@ -3,7 +3,7 @@ import { useRoute } from "vue-router";
 import { categories, products } from "@/data/categories";
 
 import "@/assets/styles/productDetail.css";
-import "@/assets/styles/item.css";
+
 
 
 const route = useRoute();
