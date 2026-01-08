@@ -1,3 +1,4 @@
+// ---------- CATEGORY LIST ----------
 export const categories = [
   { name: 'Mobile Covers', slug: 'mobile-covers', products: 12 },
   { name: 'Chargers & Cables', slug: 'chargers-cables', products: 10 },
@@ -23,4 +24,43 @@ export const categories = [
   { name: 'Health Tech', slug: 'health-tech', products: 21 },
   { name: 'Travel Accessories', slug: 'travel-accessories', products: 22 },
   { name: 'Photography Accessories', slug: 'photography-accessories', products: 23 },
-]
+];
+
+
+// ---------- RANDOM HELPER ----------
+function random(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+// ---------- PRODUCT AUTO GENERATION ----------
+export const products = [];
+
+let globalId = 1;
+
+categories.forEach(category => {
+  for (let i = 1; i <= category.products; i++) {
+
+    products.push({
+      id: globalId++,
+      name: `${category.name} Product ${i}`,
+      slug: `${category.slug}-product-${i}`,
+      categorySlug: category.slug,
+
+      price: random(99, 4999),
+      mrp: random(199, 6999),
+
+      discountPercent: random(5, 80),
+      rating: (Math.random() * (5 - 3) + 3).toFixed(1),
+
+      stock: random(0, 150),
+
+      images: [
+        `/images/${category.slug}/${i}.jpg`
+      ],
+
+      description: `Dummy description for ${category.name} product ${i}.`
+    });
+
+  }
+});
