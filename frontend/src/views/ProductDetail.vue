@@ -1,6 +1,6 @@
 <script setup>
 import { useRoute } from "vue-router";
-import { products } from "@/data/categories";
+import { categories, products } from "@/data/categories";
 
 import "@/assets/css/productDetail.css";
 
