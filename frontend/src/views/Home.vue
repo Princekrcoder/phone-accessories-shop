@@ -30,8 +30,8 @@
         <!-- SINGLE ROW SCROLL CATEGORY LIST -->
         <div class="category-row">
           <div
-            v-for="n in cat.products"
-            :key="n"
+            v-for="p in products.filter(pr => pr.categorySlug === cat.slug)"
+
             class="product-card"
           >
             <span class="badge-discount">-20%</span>
