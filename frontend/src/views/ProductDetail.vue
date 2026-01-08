@@ -56,3 +56,5 @@ const product = products.find(p => p.slug === slug);
   </div>
 </template>
 
+
+
