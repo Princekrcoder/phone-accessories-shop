@@ -62,7 +62,8 @@
 
 <script setup>
 import { RouterLink } from "vue-router";
-import { categories } from "@/data/categories";
+import { categories, products } from "@/data/categories";
+
 
 import "@/assets/styles/home.css";
 import "@/assets/styles/item.css";
