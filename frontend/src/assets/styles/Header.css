@@ -289,5 +289,8 @@
   z-index: 1001;
 
   display: flex;
-  flex: ;
+  flex-direction: column;
+  gap: 14px;
+
+  box-shadow: ;
 }
