@@ -2,13 +2,13 @@
   <div class="home">
 
     <!-- Banner -->
-    <section class="banner d-flex align-items-center text-center text-white">
+    <!-- <section class="banner d-flex align-items-center text-center text-white">
       <div class="container">
         <h1>Big Sale is Live</h1>
         <p>Up to 60% OFF on top brands</p>
         <button class="btn btn-light">Shop Now</button>
       </div>
-    </section>
+    </section> -->
 
     <!-- CATEGORY ROW LIST -->
     <div class="container my-4">
