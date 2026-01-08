@@ -50,7 +50,14 @@ const product = products.find(p => p.slug === slug);
     </div>
   </div>
 
-  <!-- RELATED PRODUCTS -->
+  
+
+  <!-- SAFETY -->
+  <div v-else class="container">
+    <h2>Product not found</h2>
+
+
+    <!-- RELATED PRODUCTS -->
 <div v-if="relatedProducts.length" class="pd-related-section">
   <div class="d-flex justify-content-between align-items-center mb-2">
     <h3>More from this category</h3>
@@ -89,10 +96,6 @@ const product = products.find(p => p.slug === slug);
   </div>
 </div>
 
-
-  <!-- SAFETY -->
-  <div v-else class="container">
-    <h2>Product not found</h2>
   </div>
 </template>
 
