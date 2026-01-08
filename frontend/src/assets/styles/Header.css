@@ -342,3 +342,7 @@
   transition: opacity 0.25s ease;
 }
 
+.profile-btn {
+  border: none;
+  background: none;
+}
