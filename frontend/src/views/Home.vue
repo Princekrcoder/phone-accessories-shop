@@ -25,8 +25,8 @@
 
             <!-- SINGLE ROW SCROLL CATEGORY LIST -->
             <div class="category-row">
-                <div v-for="p in products.filter(pr => pr.categorySlug === cat.slug)" :key="p.id" class="product-card">
-                  
+                <RouterLink v-for="p in products.filter(pr => pr.categorySlug === cat.slug)" :key="p.id" :to="`/product/${p.slug}`" class="product-card">
+
                     <span class="badge-discount">-{{ p.discountPercent }}%</span>
 
                     <img :src="p.images[0]" class="product-img" />
@@ -41,7 +41,7 @@
                     <button class="add-btn">
                         <b class="add-name">ADD TO CART</b>
                     </button>
-                </div>
+                </RouterLink>
 
             </div>
 
