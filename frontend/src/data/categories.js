@@ -54,7 +54,7 @@ categories.forEach((category) => {
 
       images: [`https://picsum.photos/seed/${category.slug}-product-${i}/400/400`],
 
-      description: `Dummy description for ${category.name} product ${i} lorem100.`,
+      description: `Dummy description for ${category.name} product ${i}.`,
     })
   }
 })
