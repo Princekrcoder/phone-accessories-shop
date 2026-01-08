@@ -37,7 +37,8 @@
             <span class="badge-discount">-20%</span>
 
             <img
-              :src="`https://picsum.photos/400?random-${index}${n}`"
+              :src="p.images[0]"
+
               class="product-img"
             />
 
