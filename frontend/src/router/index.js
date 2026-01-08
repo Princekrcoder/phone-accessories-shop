@@ -24,6 +24,9 @@ const router = createRouter({
       name: 'CategoryPage',
       component: CategoryPage,
     },
+    {
+      
+    },
   ],
 })
 
