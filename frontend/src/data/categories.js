@@ -24,23 +24,20 @@ export const categories = [
   { name: 'Health Tech', slug: 'health-tech', products: 21 },
   { name: 'Travel Accessories', slug: 'travel-accessories', products: 22 },
   { name: 'Photography Accessories', slug: 'photography-accessories', products: 23 },
-];
-
+]
 
 // ---------- RANDOM HELPER ----------
 function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
-
 // ---------- PRODUCT AUTO GENERATION ----------
-export const products = [];
+export const products = []
 
-let globalId = 1;
+let globalId = 1
 
-categories.forEach(category => {
+categories.forEach((category) => {
   for (let i = 1; i <= category.products; i++) {
-
     products.push({
       id: globalId++,
       name: `${category.name} Product ${i}`,
@@ -55,12 +52,9 @@ categories.forEach(category => {
 
       stock: random(0, 150),
 
-      images: [
-        `/images/${category.slug}/${i}.jpg`
-      ],
+      images: [`https://picsum.photos/seed/${category.slug}-product-${i}/400/400`],
 
-      description: `Dummy description for ${category.name} product ${i}.`
-    });
-
+      description: `Dummy description for ${category.name} product ${i}.`,
+    })
   }
-});
+})
