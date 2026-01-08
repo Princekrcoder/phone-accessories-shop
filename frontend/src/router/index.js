@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Cart from '@/views/Cart.vue'
 import Home from '@/views/Home.vue'
 import CategoryPage from '@/views/CategoryPage.vue'
-import ProductDetail from '@/'
+import ProductDetail from '@/views/ProductDetail.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
