@@ -310,20 +310,21 @@
 
 /* ========SLIDE TRANSITIONS ====== */
 
-.slide-enter-form,
+.slide-enter-from,
 .slide-leave-to {
   transform: translateX(-100%);
 }
 
 .slide-enter-to,
-.slide-leave-form {
+.slide-leave-from {
   transform: translateX(0);
 }
 
-.slide-ender-active,
+.slide-enter-active,
 .slide-leave-active {
   transition: transform 0.3s ease;
 }
+
 
 /* ================= OVERLAY FADE ================= */
 .fade-enter-from,
