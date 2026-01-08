@@ -249,6 +249,10 @@
     display: none;
   }
 
+  .top-links {
+    display: none;
+  }
+
   .mobile-wrapper {
     display: flex;
     flex-direction: column;
