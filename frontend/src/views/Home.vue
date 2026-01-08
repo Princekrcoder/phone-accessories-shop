@@ -42,7 +42,8 @@
             />
 
             <h6 class="product-name">
-              {{ cat.name }} Product {{ n }}
+              {{ p.name }}
+
             </h6>
 
             <p class="price">
