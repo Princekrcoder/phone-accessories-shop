@@ -1,66 +1,73 @@
-// ---------- CATEGORY LIST ----------
-export const categories = [
-  { name: 'Mobile Covers', slug: 'mobile-covers', products: 12 },
-  { name: 'Chargers & Cables', slug: 'chargers-cables', products: 10 },
-  { name: 'Power Banks', slug: 'power-banks', products: 15 },
-  { name: 'Headphones', slug: 'headphones', products: 17 },
-  { name: 'Smart Watches', slug: 'smart-watches', products: 16 },
-  { name: 'Screen Protectors', slug: 'screen-protectors', products: 88 },
-  { name: 'Wireless Chargers', slug: 'wireless-chargers', products: 9 },
-  { name: 'Car Accessories', slug: 'car-accessories', products: 14 },
-  { name: 'Audio Accessories', slug: 'audio-accessories', products: 11 },
-  { name: 'Smart Home Devices', slug: 'smart-home-devices', products: 17 },
-  { name: 'Gaming Accessories', slug: 'gaming-accessories', products: 13 },
-  { name: 'Wearable Tech', slug: 'wearable-tech', products: 18 },
-  { name: 'Fitness Trackers', slug: 'fitness-trackers', products: 15 },
-  { name: 'Cameras & Drones', slug: 'cameras-drones', products: 16 },
-  { name: 'Computer Accessories', slug: 'computer-accessories', products: 14 },
-  { name: 'Networking Devices', slug: 'networking-devices', products: 13 },
-  { name: 'TV & Home Entertainment', slug: 'tv-home-entertainment', products: 12 },
-  { name: 'Office Electronics', slug: 'office-electronics', products: 11 },
-  { name: 'Audio Equipment', slug: 'audio-equipment', products: 18 },
-  { name: 'Virtual Reality Gear', slug: 'virtual-reality-gear', products: 19 },
-  { name: 'Smart Lighting', slug: 'smart-lighting', products: 20 },
-  { name: 'Health Tech', slug: 'health-tech', products: 21 },
-  { name: 'Travel Accessories', slug: 'travel-accessories', products: 22 },
-  { name: 'Photography Accessories', slug: 'photography-accessories', products: 23 },
-];
+<template>
+  <div class="home">
 
+    <!-- Banner -->
+    <!-- <section class="banner d-flex align-items-center text-center text-white">
+      <div class="container">
+        <h1>Big Sale is Live</h1>
+        <p>Up to 60% OFF on top brands</p>
+        <button class="btn btn-light">Shop Now</button>
+      </div>
+    </section> -->
 
-// ---------- RANDOM HELPER ----------
-function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+    <!-- CATEGORY ROW LIST -->
+    <div class="container my-4">
 
+      <div
+        v-for="(cat, index) in categories.slice(0, 20)"
+        :key="index"
+        class="category-section"
+      >
+        <!-- Row Title -->
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h3>{{ cat.name }}</h3>
 
-// ---------- PRODUCT AUTO GENERATION ----------
-export const products = [];
+          <RouterLink :to="`/category/${cat.slug}`" class="view-all">
+            View All
+          </RouterLink>
+        </div>
 
-let globalId = 1;
+        <!-- SINGLE ROW SCROLL CATEGORY LIST -->
+        <div class="category-row">
+          <div
+            v-for="n in cat.products"
+            :key="n"
+            class="product-card"
+          >
+            <span class="badge-discount">-20%</span>
 
-categories.forEach(category => {
-  for (let i = 1; i <= category.products; i++) {
+            <img
+              :src="`https://picsum.photos/400?random-${index}${n}`"
+              class="product-img"
+            />
 
-    products.push({
-      id: globalId++,
-      name: `${category.name} Product ${i}`,
-      slug: `${category.slug}-product-${i}`,
-      categorySlug: category.slug,
+            <h6 class="product-name">
+              {{ cat.name }} Product {{ n }}
+            </h6>
 
-      price: random(99, 4999),
-      mrp: random(199, 6999),
+            <p class="price">
+              ₹999
+              <span class="old-price">₹1299</span>
+            </p>
 
-      discountPercent: random(5, 80),
-      rating: (Math.random() * (5 - 3) + 3).toFixed(1),
+            <button class="add-btn">
+              <b class="add-name">ADD TO CART</b>
+            </button>
+          </div>
+        </div>
 
-      stock: random(0, 150),
+        <hr />
+      </div>
 
-      images: [
-        `/images/${category.slug}/${i}.jpg`
-      ],
+    </div>
 
-      description: `Dummy description for ${category.name} product ${i}.`
-    });
+  </div>
+</template>
 
-  }
-});
+<script setup>
+import { RouterLink } from "vue-router";
+import { categories } from "@/data/categories";
+
+import "@/assets/styles/home.css";
+import "@/assets/styles/item.css";
+</script>
