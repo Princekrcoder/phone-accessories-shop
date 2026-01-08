@@ -106,8 +106,11 @@ const isSearchOpen = ref(false);
         </div>
 
         <!-- DARK OVERLAY -->
-        <div class="mobile-overlay" v-if="isMobileMenu" @click="isMobileMenu = false">
-        </div>
+        <transition name="fade">
+            <div 
+            v-if="isMobileMenu" class="mobile-overlay" @click="isMobileMenu = false">
+            </div>
+        </transition>
 
         <!-- SLIDE MENU -->
         <transition name="slide">
