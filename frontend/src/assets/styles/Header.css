@@ -299,7 +299,7 @@
   flex-direction: column;
   gap: 14px;
 
-  
+  box-shadow: 4px 0 12px rgba(0,0,0,0.25);
 }
 
 .mobile-slide-menu {
