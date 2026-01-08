@@ -311,3 +311,9 @@
 }
 
 .slide-enter-to,
+.slide-leave-form {
+  transform: translateX(0%);
+}
+
+.slide-ender-active,
+.slide-leave-active {
