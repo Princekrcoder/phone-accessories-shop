@@ -30,21 +30,19 @@
         <!-- SINGLE ROW SCROLL CATEGORY LIST -->
         <div class="category-row">
           <div
-            v-for="p in products.filter(pr => pr.categorySlug === cat.slug)"
-
+            v-for="n in cat.products"
+            :key="n"
             class="product-card"
           >
             <span class="badge-discount">-20%</span>
 
             <img
-              :src="p.images[0]"
-
+              :src="`https://picsum.photos/400?random-${index}${n}`"
               class="product-img"
             />
 
             <h6 class="product-name">
-              {{ p.name }}
-
+              {{ cat.name }} Product {{ n }}
             </h6>
 
             <p class="price">
