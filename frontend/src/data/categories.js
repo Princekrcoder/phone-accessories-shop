@@ -60,7 +60,6 @@ product ensures long-term usage without compromising on comfort or reliability. 
 modern design makes it suitable for daily use, whether at home, work, or on the go. This product 
 is easy to maintain, user-friendly, and built to meet customer expectations. If you are looking 
 for a dependable and stylish ${category.name} accessory, this product is an excellent choice.`,
-
     })
   }
 })
