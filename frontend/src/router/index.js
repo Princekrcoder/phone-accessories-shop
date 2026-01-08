@@ -25,7 +25,9 @@ const router = createRouter({
       component: CategoryPage,
     },
     {
-      
+      path: '/product/:slug',
+      name: 'ProductDetail',
+      component: ProductDetail,
     },
   ],
 })
