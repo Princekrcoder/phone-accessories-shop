@@ -38,7 +38,7 @@
                         <span class="old-price">₹{{ p.mrp }}</span>
                     </p>
 
-                    <button class="add-btn" >
+                    <button class="add-btn" @click.stop>
                         <b class="add-name">ADD TO CART</b>
                     </button>
                 </RouterLink>
