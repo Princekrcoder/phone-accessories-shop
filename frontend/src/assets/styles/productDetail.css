@@ -175,3 +175,19 @@
     padding: 13px;
   }
 }
+
+
+/* ===============================
+   RELATED PRODUCTS WRAPPER
+   Uses item.css internally
+================================ */
+
+.pd-related-section {
+  margin-top: 50px;
+}
+
+/* MAX 3 ROW LIMIT */
+.pd-related-section .product-grid {
+  max-height: calc(3 * 260px); /* approx card height */
+  overflow: hidden;
+}
