@@ -28,8 +28,33 @@
         </div>
 
         <!-- SINGLE ROW SCROLL CATEGORY LIST -->
-        
+        <div class="category-row">
+          <div
+            v-for="n in cat.products"
+            :key="n"
+            class="product-card"
+          >
+            <span class="badge-discount">-20%</span>
 
+            <img
+              :src="`https://picsum.photos/400?random-${index}${n}`"
+              class="product-img"
+            />
+
+            <h6 class="product-name">
+              {{ cat.name }} Product {{ n }}
+            </h6>
+
+            <p class="price">
+              ₹999
+              <span class="old-price">₹1299</span>
+            </p>
+
+            <button class="add-btn">
+              <b class="add-name">ADD TO CART</b>
+            </button>
+          </div>
+        </div>
 
         <hr />
       </div>
@@ -41,7 +66,7 @@
 
 <script setup>
 import { RouterLink } from "vue-router";
-import { categories, products } from "@/data/categories";
+import { categories } from "@/data/categories";
 
 import "@/assets/styles/home.css";
 import "@/assets/styles/item.css";
