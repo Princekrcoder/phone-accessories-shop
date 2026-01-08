@@ -274,34 +274,34 @@
 }
 
 /* ================= MOBILE SLIDE MENU ================= */
-.mobile-slide-menu {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-
-  width: 70%;
-  max-width: 320px;
-  height: 100vh;
-
-  background: #fff;
-  padding: 20px 16px;
-
-  z-index: 1001;
-
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-
-  box-shadow: 4px 0 12px rgba(0,0,0,0.15);
-}
-
 .mobile-overlay {
   position: fixed;
   inset: 0;
   z-index: 10000;
   background: rgba(0,0,0,0.4);
-  
 }
+
+.mobile-slide-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 70%;
+  max-width: 320px;
+  height: 100vh;
+
+  background: #ffffff;
+  padding: 20px 16px;
+
+  z-index: 10001; /* 🔥 overlay se upar */
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  box-shadow: 4px 0 12px rgba(0,0,0,0.25);
+}
+
 
 /* ========SLIDE TRANSITIONS ====== */
 
