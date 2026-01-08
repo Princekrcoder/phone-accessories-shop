@@ -1,12 +1,16 @@
 <script>
-import {
-    ref
-} from "vue";
+import { ref, watch } from "vue";
+
+
 import {
     RouterLink
 } from "vue-router";
 
 import "@/assets/image/laxman-logo.png";
+
+watch(isMobileMenu, (val) => {
+  document.body.style.overflow = val ? "hidden" : "auto";
+});
 
 const isMobileMenu = ref(false);
 const isSearchOpen = ref(false);
