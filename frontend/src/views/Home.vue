@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+<div class="home">
 
     <!-- Banner -->
     <!-- <section class="banner d-flex align-items-center text-center text-white">
@@ -13,57 +13,53 @@
     <!-- CATEGORY ROW LIST -->
     <div class="container my-4">
 
-      <div
-        v-for="(cat, index) in categories.slice(0, 20)"
-        :key="index"
-        class="category-section"
-      >
-        <!-- Row Title -->
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <h3>{{ cat.name }}</h3>
+        <div v-for="(cat, index) in categories.slice(0, 20)" :key="index" class="category-section">
+            <!-- Row Title -->
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h3>{{ cat.name }}</h3>
 
-          <RouterLink :to="`/category/${cat.slug}`" class="view-all">
-            View All
-          </RouterLink>
+                <RouterLink :to="`/category/${cat.slug}`" class="view-all">
+                    View All
+                </RouterLink>
+            </div>
+
+            <!-- SINGLE ROW SCROLL CATEGORY LIST -->
+            <div class="category-row">
+                <div v-for="p in products.filter(pr => pr.categorySlug === cat.slug)" :key="p.id" class="product-card">
+                    <span class="badge-discount">-{{ p.discountPercent }}%</span>
+
+                    <img :src="p.images[0]" class="product-img" />
+
+                    <h6 class="product-name">{{ p.name }}</h6>
+
+                    <p class="price">
+                        ₹{{ p.price }}
+                        <span class="old-price">₹{{ p.mrp }}</span>
+                    </p>
+
+                    <button class="add-btn">
+                        <b class="add-name">ADD TO CART</b>
+                    </button>
+                </div>
+
+            </div>
+
+            <hr />
         </div>
-
-        <!-- SINGLE ROW SCROLL CATEGORY LIST -->
-        <div class="category-row">
-          <div
-  v-for="p in products.filter(pr => pr.categorySlug === cat.slug)"
-  :key="p.id"
-  class="product-card"
->
-  <span class="badge-discount">-{{ p.discountPercent }}%</span>
-
-  <img :src="p.images[0]" class="product-img" />
-
-  <h6 class="product-name">{{ p.name }}</h6>
-
-  <p class="price">
-    ₹{{ p.price }}
-    <span class="old-price">₹{{ p.mrp }}</span>
-  </p>
-
-  <button class="add-btn">
-    <b class="add-name">ADD TO CART</b>
-  </button>
-</div>
-
-        </div>
-
-        <hr />
-      </div>
 
     </div>
 
-  </div>
+</div>
 </template>
 
-<script setup>
-import { RouterLink } from "vue-router";
-import { categories, products } from "@/data/categories";
-
+<script>
+import {
+    RouterLink
+} from "vue-router";
+import {
+    categories,
+    products
+} from "@/data/categories";
 
 import "@/assets/styles/home.css";
 import "@/assets/styles/item.css";
