@@ -2,6 +2,8 @@
 import { useRoute } from "vue-router";
 import { products } from "@/data/categories";
 
+import
+
 const route = useRoute();
 const slug = route.params.slug;
 
