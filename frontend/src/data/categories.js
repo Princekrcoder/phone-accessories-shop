@@ -54,7 +54,13 @@ categories.forEach((category) => {
 
       images: [`https://picsum.photos/seed/${category.slug}-product-${i}/400/400`],
 
-      description: `Dummy description for ${category.name} product ${i}.`,
+      description: `The ${category.name} product ${i} is carefully designed to deliver a perfect balance 
+between style, performance, and durability. Manufactured with high-quality materials, this 
+product ensures long-term usage without compromising on comfort or reliability. Its sleek and 
+modern design makes it suitable for daily use, whether at home, work, or on the go. This product 
+is easy to maintain, user-friendly, and built to meet customer expectations. If you are looking 
+for a dependable and stylish ${category.name} accessory, this product is an excellent choice.`,
+
     })
   }
 })
