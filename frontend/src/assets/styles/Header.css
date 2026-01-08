@@ -263,6 +263,12 @@
     gap: 4px;
   }
 
+  .top-bar b {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .mobile-logo img {
     height: 60px;
   }
