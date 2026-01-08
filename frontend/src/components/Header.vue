@@ -12,6 +12,10 @@ watch(isMobileMenu, (val) => {
   document.body.style.overflow = val ? "hidden" : "auto";
 });
 
+watch(isMobileMenu, (val) => {
+  if (val) isSearchOpen.value = false;
+});
+
 const isMobileMenu = ref(false);
 const isSearchOpen = ref(false);
 </script>
