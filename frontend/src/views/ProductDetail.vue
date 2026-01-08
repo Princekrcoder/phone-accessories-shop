@@ -50,6 +50,46 @@ const product = products.find(p => p.slug === slug);
     </div>
   </div>
 
+  <!-- RELATED PRODUCTS -->
+<div v-if="relatedProducts.length" class="pd-related-section">
+  <div class="d-flex justify-content-between align-items-center mb-2">
+    <h3>More from this category</h3>
+
+    <RouterLink
+      :to="`/category/${product.categorySlug}`"
+      class="view-all"
+    >
+      View All
+    </RouterLink>
+  </div>
+
+  <!-- SAME GRID AS HOME (item.css) -->
+  <div class="product-grid">
+    <RouterLink
+      v-for="p in relatedProducts"
+      :key="p.id"
+      :to="`/product/${p.slug}`"
+      class="product-card"
+    >
+      <span class="badge-discount">-{{ p.discountPercent }}%</span>
+
+      <img :src="p.images[0]" class="product-img" />
+
+      <h6 class="product-name">{{ p.name }}</h6>
+
+      <p class="price">
+        ₹{{ p.price }}
+        <span class="old-price">₹{{ p.mrp }}</span>
+      </p>
+
+      <button class="add-btn" @click.stop>
+        <b class="add-name">ADD TO CART</b>
+      </button>
+    </RouterLink>
+  </div>
+</div>
+
+
   <!-- SAFETY -->
   <div v-else class="container">
     <h2>Product not found</h2>
