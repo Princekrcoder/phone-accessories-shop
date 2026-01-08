@@ -2,7 +2,7 @@
 import { useRoute } from "vue-router";
 import { categories, products } from "@/data/categories";
 
-import "@/assets/css/productDetail.css";
+import "@/assets/styles/productDetail.css";
 
 const route = useRoute();
 const slug = route.params.slug;
