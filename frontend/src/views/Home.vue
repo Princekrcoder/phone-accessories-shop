@@ -30,30 +30,26 @@
         <!-- SINGLE ROW SCROLL CATEGORY LIST -->
         <div class="category-row">
           <div
-            v-for="n in cat.products"
-            :key="n"
-            class="product-card"
-          >
-            <span class="badge-discount">-20%</span>
+  v-for="p in products.filter(pr => pr.categorySlug === cat.slug)"
+  :key="p.id"
+  class="product-card"
+>
+  <span class="badge-discount">-{{ p.discountPercent }}%</span>
 
-            <img
-              :src="`https://picsum.photos/400?random-${index}${n}`"
-              class="product-img"
-            />
+  <img :src="p.images[0]" class="product-img" />
 
-            <h6 class="product-name">
-              {{ cat.name }} Product {{ n }}
-            </h6>
+  <h6 class="product-name">{{ p.name }}</h6>
 
-            <p class="price">
-              ₹999
-              <span class="old-price">₹1299</span>
-            </p>
+  <p class="price">
+    ₹{{ p.price }}
+    <span class="old-price">₹{{ p.mrp }}</span>
+  </p>
 
-            <button class="add-btn">
-              <b class="add-name">ADD TO CART</b>
-            </button>
-          </div>
+  <button class="add-btn">
+    <b class="add-name">ADD TO CART</b>
+  </button>
+</div>
+
         </div>
 
         <hr />
