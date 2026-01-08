@@ -286,5 +286,8 @@
   background: #fff;
   padding: 20px 16px;
 
-  
+  z-index: 1001;
+
+  display: flex;
+  flex: ;
 }
