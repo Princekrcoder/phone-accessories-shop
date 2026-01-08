@@ -54,14 +54,12 @@
 </template>
 
 <script>
-import {
-    RouterLink
-} from "vue-router";
-import {
-    categories,
-    products
-} from "@/data/categories";
+<script setup>
+import { RouterLink } from "vue-router";
+import { categories, products } from "@/data/categories";
 
 import "@/assets/styles/home.css";
 import "@/assets/styles/item.css";
+</script>
+
 </script>
