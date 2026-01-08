@@ -305,4 +305,9 @@
 
 /* ========SLIDE TRANSITIONS ====== */
 
-.slide-en
+.slide-enter-form,
+.slide-leave-to {
+  transform: translateX(-100%);
+}
+
+.slide-enter-to,
