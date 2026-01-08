@@ -26,6 +26,7 @@
             <!-- SINGLE ROW SCROLL CATEGORY LIST -->
             <div class="category-row">
                 <div v-for="p in products.filter(pr => pr.categorySlug === cat.slug)" :key="p.id" class="product-card">
+                  
                     <span class="badge-discount">-{{ p.discountPercent }}%</span>
 
                     <img :src="p.images[0]" class="product-img" />
