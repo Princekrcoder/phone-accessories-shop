@@ -1,23 +1,21 @@
-<script>
+<script setup>
 import { ref, watch } from "vue";
-
-
-import {
-    RouterLink
-} from "vue-router";
+import { RouterLink } from "vue-router";
 
 import "@/assets/image/laxman-logo.png";
 
-watch(isMobileMenu, (val) => {
-  document.body.style.overflow = val ? "hidden" : "auto";
-});
-
-watch(isMobileMenu, (val) => {
-  if (val) isSearchOpen.value = false;
-});
-
 const isMobileMenu = ref(false);
 const isSearchOpen = ref(false);
+
+// 🔒 Body scroll lock when menu open
+watch(isMobileMenu, (val) => {
+  document.body.style.overflow = val ? "hidden" : "auto";
+
+  // menu open hote hi search band
+  if (val) {
+    isSearchOpen.value = false;
+  }
+});
 </script>
 
 <template>
