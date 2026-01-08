@@ -283,5 +283,8 @@
   max-width: 320px;
   height: 100vh;
 
-  back
+  background: #fff;
+  padding: 20px 16px;
+
+  
 }
