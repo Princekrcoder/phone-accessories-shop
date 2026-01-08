@@ -96,8 +96,8 @@
 /* ADD TO CART BUTTON */
 .pd-add-cart {
   width: 40%;
-  background: #ffc107;
-  border: none;
+  
+  
   padding: 14px 16px;
   font-size: 15px;
   font-weight: 700;
@@ -112,10 +112,8 @@
   
   padding: 6px 10px;
   border-radius: 3px;
-  cursor: pointer;
-  font-size: 12px;
-  margin-top: 6px;
-  letter-spacing: 0.5px;
+  
+  
 }
 
 .pd-add-cart:hover {
