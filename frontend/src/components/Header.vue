@@ -119,7 +119,7 @@ const isSearchOpen = ref(false);
       </div>
 
       <!-- SLIDE MENU -->
-      <div class="mobile-slide-menu" v-if="isMobileMenu">
+      <div class="mobile-slide-menu"   v-if="isMobileMenu">
 
         <button class="profile-btn">
           <i class="bi bi-person-circle" style="font-size: 42px;"></i>
