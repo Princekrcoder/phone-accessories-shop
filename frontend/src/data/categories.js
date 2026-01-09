@@ -1,4 +1,3 @@
-// ---------- CATEGORY LIST ----------
 export const categories = [
   { name: 'Mobile Covers', slug: 'mobile-covers', products: 12 },
   { name: 'Chargers & Cables', slug: 'chargers-cables', products: 10 },
