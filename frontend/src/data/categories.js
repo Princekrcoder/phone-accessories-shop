@@ -51,7 +51,13 @@ categories.forEach((category) => {
 
       stock: random(0, 150),
 
-      images: [`https://picsum.photos/seed/${category.slug}-product-${i}/400/400`],
+      images: [
+  `https://picsum.photos/seed/${category.slug}-product-${i}-1/600/600`,
+  `https://picsum.photos/seed/${category.slug}-product-${i}-2/600/600`,
+  `https://picsum.photos/seed/${category.slug}-product-${i}-3/600/600`,
+  `https://picsum.photos/seed/${category.slug}-product-${i}-4/600/600`
+],
+
 
       description: `The ${category.name} product ${i} is carefully designed to deliver a perfect balance 
 between style, performance, and durability. Manufactured with high-quality materials, this 

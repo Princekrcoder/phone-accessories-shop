@@ -18,9 +18,9 @@
             <div class="d-flex justify-content-between align-items-center mb-2">
                 <h3>{{ cat.name }}</h3>
 
-                <RouterLink :to="`/category/${cat.slug}`" class="view-all">
+                <!-- <RouterLink :to="`/category/${cat.slug}`" class="view-all">
                     View All
-                </RouterLink>
+                </RouterLink> -->
             </div>
 
             <!-- SINGLE ROW SCROLL CATEGORY LIST -->

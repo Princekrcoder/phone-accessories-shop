@@ -186,8 +186,32 @@
   margin-top: 50px;
 }
 
-/* MAX 3 ROW LIMIT */
-.pd-related-section .product-grid {
-  max-height: calc(3 * 260px); /* approx card height */
-  overflow: hidden;
+/* ===============================
+   PRODUCT IMAGE SELECTOR
+================================ */
+
+.pd-thumb-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
 }
+
+.pd-thumb {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.2s ease, transform 0.15s ease;
+}
+
+.pd-thumb:hover {
+  transform: scale(1.05);
+}
+
+.pd-thumb.active {
+  border-color: #ffc107;
+}
+

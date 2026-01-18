@@ -8,6 +8,17 @@ import ProductDetail from '@/views/ProductDetail.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
 
+  /* ✅ SCROLL FIX */
+  scrollBehavior(to, from, savedPosition) {
+    // browser back / forward
+    if (savedPosition) {
+      return savedPosition
+    }
+
+    // every route change -> top
+    return { top: 0 }
+  },
+
   routes: [
     {
       path: '/cart',

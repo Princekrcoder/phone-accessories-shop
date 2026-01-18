@@ -120,3 +120,26 @@
   width: 150px;
   min-width: 150px;
 }
+
+/* ---------- HIDE SCROLLBAR BUT KEEP SLIDE ---------- */
+
+.category-row {
+  display: flex;
+  gap: 14px;
+
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  padding: 4px 0 8px 0;
+
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  /* 🔥 scrollbar hide */
+  scrollbar-width: none;        /* Firefox */
+}
+
+.category-row::-webkit-scrollbar {
+  display: none;                /* Chrome, Edge, Safari */
+}

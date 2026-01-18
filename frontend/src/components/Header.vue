@@ -45,9 +45,9 @@ watch(isMobileMenu, (val) => {
 
             <!-- NAV -->
             <nav class="nav-links">
-                <a href="#"><b>MOBILE COVER</b></a>
+                <a href="#"><b>CATEGORY</b></a>
                 <a href="#"><b>MORE</b></a>
-                <a href="#"><b>OFFER</b></a>
+                <a href="#"><b>OFFERS</b></a>
             </nav>
 
             <!-- SEARCH + CART + USER -->
